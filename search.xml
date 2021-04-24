@@ -19,7 +19,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title></title>
+    <title>PCI总线设备</title>
     <url>/2021/04/24/PCI%E6%80%BB%E7%BA%BF%E8%AE%BE%E5%A4%87/</url>
     <content><![CDATA[<h1 id="PCI总线设备"><a href="#PCI总线设备" class="headerlink" title="PCI总线设备"></a>PCI总线设备</h1><h2 id="PCI总线"><a href="#PCI总线" class="headerlink" title="PCI总线"></a>PCI总线</h2><p>​       PCI是外围设备互连（Peripheral Component Interconnect）的简称，作为一种通用的总线标准接口。</p>
 <p>​       PCI总线具有3个非常显著的优点：</p>
@@ -71,5 +71,13 @@
 <p>​         用模块方式实现PCI设备驱动程序时，通常要实现一下几个部分：初始化设备模块、设备打开模块、数据读写和控制模块、中断处理模块、设备释放模块及设备卸载模块等。</p>
 <p>​    </p>
 ]]></content>
+      <categories>
+        <category>Hardware</category>
+        <category>驱动</category>
+      </categories>
+      <tags>
+        <tag>PCI</tag>
+        <tag>Linux</tag>
+      </tags>
   </entry>
 </search>
