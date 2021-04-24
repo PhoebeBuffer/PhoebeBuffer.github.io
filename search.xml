@@ -61,4 +61,156 @@
         <tag>PCI</tag>
       </tags>
   </entry>
+  <entry>
+    <title>信息的表示与处理</title>
+    <url>/2021/04/24/%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<h1 id="信息的表示和处理"><a href="#信息的表示和处理" class="headerlink" title="信息的表示和处理"></a>信息的表示和处理</h1><h2 id="1-信息存储"><a href="#1-信息存储" class="headerlink" title="1.信息存储"></a>1.信息存储</h2><h3 id="十六进制表示法"><a href="#十六进制表示法" class="headerlink" title="十六进制表示法"></a>十六进制表示法</h3><h3 id="字数据大小"><a href="#字数据大小" class="headerlink" title="字数据大小"></a>字数据大小</h3><ul>
+<li><p>字长</p>
+<p>虚拟地址空间的最大大小。<br>32位/64位<br>long，char<br>基本C 数据类型的典型大小</p>
+</li>
+</ul>
+<h3 id="寻址和字节顺序"><a href="#寻址和字节顺序" class="headerlink" title="寻址和字节顺序"></a>寻址和字节顺序</h3><ul>
+<li><p>多字节对象</p>
+<p>多字节对象都被存储为连续的字节序<br>列，对象的地址为所使用字节中最小的地址。</p>
+<ul>
+<li><p>大端法</p>
+<p>最高有效字节在最前面<br>例 ：x=0x01234567<br>小端法存储：01 23 45 67</p>
+</li>
+<li><p>小端法</p>
+<p>最低有效字节在最前面<br>例 ：x=0x01234567<br>小端法存储：67 45 23 01</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="表示字符串"><a href="#表示字符串" class="headerlink" title="表示字符串"></a>表示字符串</h3><p>C 语言中字符串被编码为一个以null( 其值为0) 字符结尾的字符数组</p>
+<ul>
+<li>ASCII 字符码</li>
+</ul>
+<h3 id="表示代码"><a href="#表示代码" class="headerlink" title="表示代码"></a>表示代码</h3><ul>
+<li>程序是字节序列</li>
+</ul>
+<h3 id="布尔代数简介"><a href="#布尔代数简介" class="headerlink" title="布尔代数简介"></a>布尔代数简介</h3><ul>
+<li><p>NOT，AND，OR和EXCLUSIVE-OR</p>
+<p>~，&amp;，|，^</p>
+</li>
+<li><p>位向量运算</p>
+</li>
+</ul>
+<h3 id="C-语言中的位级运算"><a href="#C-语言中的位级运算" class="headerlink" title="C 语言中的位级运算"></a>C 语言中的位级运算</h3><p>将十六进制的参数扩展成二进制表示并执行二进制运算，然后再转换回十六进制。</p>
+<ul>
+<li><p>掩码运算</p>
+<p>x&amp;0xFF</p>
+</li>
+</ul>
+<h3 id="C-语言中的逻辑运算"><a href="#C-语言中的逻辑运算" class="headerlink" title="C 语言中的逻辑运算"></a>C 语言中的逻辑运算</h3><ul>
+<li><p>OR，AND，NOT</p>
+<p>|| ，&amp;&amp;，!</p>
+</li>
+</ul>
+<h3 id="C-语言中的移位运算"><a href="#C-语言中的移位运算" class="headerlink" title="C 语言中的移位运算"></a>C 语言中的移位运算</h3><ul>
+<li>算数移位</li>
+<li>逻辑移位</li>
+</ul>
+<h2 id="2-整数表示"><a href="#2-整数表示" class="headerlink" title="2.整数表示"></a>2.整数表示</h2><h3 id="整型数据类型"><a href="#整型数据类型" class="headerlink" title="整型数据类型"></a>整型数据类型</h3><ul>
+<li><p>无符号</p>
+</li>
+<li><p>有符号</p>
+<p>取值范围不对称</p>
+</li>
+</ul>
+<h3 id="无符号数的编码"><a href="#无符号数的编码" class="headerlink" title="无符号数的编码"></a>无符号数的编码</h3><h3 id="补码编码"><a href="#补码编码" class="headerlink" title="补码编码"></a>补码编码</h3><p>负权重<br>负数的二进制表示<br>比如，5二进制表示为0101，<br>除去符号位即第一位0，<br>对101求反码得到010，<br>反码+1得到011即补码，<br>在首位加上符号位1，<br>则-5用二进制表示是1011。<br>这个求解过程与用公式算的结果是一样的，公式里第一位是负权重</p>
+<h3 id="有符号数和无符号数之间的转换"><a href="#有符号数和无符号数之间的转换" class="headerlink" title="有符号数和无符号数之间的转换"></a>有符号数和无符号数之间的转换</h3><p>-12345=53191</p>
+<h3 id="C-语言中的有符号数与无符号数"><a href="#C-语言中的有符号数与无符号数" class="headerlink" title="C 语言中的有符号数与无符号数"></a>C 语言中的有符号数与无符号数</h3><h3 id="扩展一个数字的位表示"><a href="#扩展一个数字的位表示" class="headerlink" title="扩展一个数字的位表示"></a>扩展一个数字的位表示</h3><ul>
+<li>无符号数的零扩展</li>
+<li>补码数的符号扩展</li>
+</ul>
+<h3 id="截断数字"><a href="#截断数字" class="headerlink" title="截断数字"></a>截断数字</h3><ul>
+<li>截断无符号数</li>
+<li>截断补码数值</li>
+</ul>
+<h3 id="关于有符号数与无符号数的建议"><a href="#关于有符号数与无符号数的建议" class="headerlink" title="关于有符号数与无符号数的建议"></a>关于有符号数与无符号数的建议</h3><h2 id="3-整数运算"><a href="#3-整数运算" class="headerlink" title="3.整数运算"></a>3.整数运算</h2><h3 id="无符号加法"><a href="#无符号加法" class="headerlink" title="无符号加法"></a>无符号加法</h3><ul>
+<li>无符号数加法</li>
+<li>检测无符号数加法中的溢出</li>
+<li>无符号数求反</li>
+</ul>
+<h3 id="补码加法"><a href="#补码加法" class="headerlink" title="补码加法"></a>补码加法</h3><ul>
+<li>补码加法</li>
+<li>检测补码加法中的溢出</li>
+</ul>
+<h3 id="补码的非"><a href="#补码的非" class="headerlink" title="补码的非"></a>补码的非</h3><ul>
+<li><p>补码的非</p>
+<p>对每一位求补，再对结果加1</p>
+</li>
+</ul>
+<h3 id="无符号乘法"><a href="#无符号乘法" class="headerlink" title="无符号乘法"></a>无符号乘法</h3><h3 id="补码乘法"><a href="#补码乘法" class="headerlink" title="补码乘法"></a>补码乘法</h3><ul>
+<li>补码乘法</li>
+<li>无符号和补码乘法的位级等价性</li>
+</ul>
+<h3 id="乘以常数"><a href="#乘以常数" class="headerlink" title="乘以常数"></a>乘以常数</h3><ul>
+<li><p>乘以2的幂</p>
+<p>以往，在大多数机器上，整数乘法指令相当慢， 需要10 个或者更多的时钟周期，然而其他整数运算(例如加法、减法、位级运算和移位)只需要1 个时钟周期。<br>编译器使用了一项重要的优化，试着用移位和加法运算的组合来代替乘以常数因子的乘法。<br>（所以说编程时如果数据是2的幂会更有效率）</p>
+</li>
+<li><p>与2的幂相乘的无符号乘法</p>
+</li>
+<li><p>与2 的幂相乘的补码乘法</p>
+</li>
+</ul>
+<h3 id="除以2-的幂"><a href="#除以2-的幂" class="headerlink" title="除以2 的幂"></a>除以2 的幂</h3><ul>
+<li>除以2 的幂的无符号除法</li>
+<li>除以2 的幂的补码除法，向下舍入</li>
+<li>除以2 的幂的补码除法，向上舍入</li>
+</ul>
+<h3 id="关于整数运算的最后思考"><a href="#关于整数运算的最后思考" class="headerlink" title="关于整数运算的最后思考"></a>关于整数运算的最后思考</h3><ul>
+<li>实际是模运算</li>
+<li>可能溢出</li>
+</ul>
+<h2 id="4-浮点数"><a href="#4-浮点数" class="headerlink" title="4.浮点数"></a>4.浮点数</h2><h3 id="二进制小数"><a href="#二进制小数" class="headerlink" title="二进制小数"></a>二进制小数</h3><h3 id="IEEE浮点表示"><a href="#IEEE浮点表示" class="headerlink" title="IEEE浮点表示"></a>IEEE浮点表示</h3><ul>
+<li><p>符号</p>
+<p>负数(s=1) 还是正数(s=0)</p>
+</li>
+<li><p>尾数</p>
+</li>
+<li><p>阶码</p>
+<p>阶码的值决定了这个数是规格化的、非规格化的或特殊值</p>
+<ul>
+<li><p>规格化的值</p>
+<p>当exp 的位模式既不全为0( 数值0) ，也不全为1 (单精度数值为255 ，双精度数值为2047) 时</p>
+<p>e-bias</p>
+<p>M = 1+f</p>
+</li>
+<li><p>非规格化的值</p>
+<p>阶码域为全0</p>
+<p>1-bias</p>
+<p>M = f</p>
+</li>
+<li><p>特殊值</p>
+<p>当阶码全为1</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="数字示例"><a href="#数字示例" class="headerlink" title="数字示例"></a>数字示例</h3><ul>
+<li>单精度与双精度</li>
+<li>整数值转换为浮点形式</li>
+</ul>
+<h3 id="舍入"><a href="#舍入" class="headerlink" title="舍入"></a>舍入</h3><ul>
+<li><p>向最接近的值舍入</p>
+<p>也称向偶数舍入<br>它将数字向上或者向下舍入，使得结果的<br>最低有效数字是偶数。</p>
+</li>
+<li><p>向零舍入</p>
+</li>
+<li><p>向下舍入</p>
+</li>
+<li><p>向上舍入</p>
+</li>
+</ul>
+<h3 id="浮点运算"><a href="#浮点运算" class="headerlink" title="浮点运算"></a>浮点运算</h3><h3 id="C语言中的浮点数"><a href="#C语言中的浮点数" class="headerlink" title="C语言中的浮点数"></a>C语言中的浮点数</h3><h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5.总结"></a>5.总结</h2>]]></content>
+      <categories>
+        <category>深入理解计算机原理</category>
+        <category>2.信息的表示与处理</category>
+      </categories>
+      <tags>
+        <tag>计算机原理</tag>
+      </tags>
+  </entry>
 </search>
