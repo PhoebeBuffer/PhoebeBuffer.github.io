@@ -20,15 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Phoebe">
-<meta property="og:url" content="http://example.com/categories/Hardware/index.html">
+  <meta name="description" content="在离线条件下使用centos系统安装包来安装系统软件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Centos下yum本地源配置">
+<meta property="og:url" content="http://example.com/2021/04/25/Centos%E4%B8%8Byum%E6%9C%AC%E5%9C%B0%E6%BA%90%E5%88%9B%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Phoebe">
+<meta property="og:description" content="在离线条件下使用centos系统安装包来安装系统软件">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-25T05:50:48.000Z">
+<meta property="article:modified_time" content="2021-04-25T06:10:17.302Z">
 <meta property="article:author" content="Phoebe">
+<meta property="article:tag" content="centos">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/categories/Hardware/">
+<link rel="canonical" href="http://example.com/2021/04/25/Centos%E4%B8%8Byum%E6%9C%AC%E5%9C%B0%E6%BA%90%E5%88%9B%E5%BB%BA/">
 
 
 <script id="page-configurations">
@@ -36,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: Hardware | Phoebe</title>
+  <title>Centos下yum本地源配置 | Phoebe</title>
   
 
 
@@ -149,51 +154,112 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Hardware
-          <small>分类</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/25/Centos%E4%B8%8Byum%E6%9C%AC%E5%9C%B0%E6%BA%90%E5%88%9B%E5%BB%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E5%A4%B4%E5%83%8F.PNG">
+      <meta itemprop="name" content="Phoebe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Phoebe">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Centos下yum本地源配置
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-04-25 13:50:48 / 修改时间：14:10:17" itemprop="dateCreated datePublished" datetime="2021-04-25T13:50:48+08:00">2021-04-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/%E5%AE%89%E8%A3%85/" itemprop="url" rel="index"><span itemprop="name">安装</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+            <div class="post-description">在离线条件下使用centos系统安装包来安装系统软件</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+        <h1 id="Centos下yum本地源配置"><a href="#Centos下yum本地源配置" class="headerlink" title="Centos下yum本地源配置"></a>Centos下yum本地源配置</h1><h2 id="1-挂载光盘（安装包）"><a href="#1-挂载光盘（安装包）" class="headerlink" title="1.挂载光盘（安装包）"></a>1.挂载光盘（安装包）</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/sr0 /mnt</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-创建本地yum源配置文件"><a href="#2-创建本地yum源配置文件" class="headerlink" title="2.创建本地yum源配置文件"></a>2.创建本地yum源配置文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mv /etc/yum.repos.d  /etc/yum.repos.d.back</span><br><span class="line">mkdir /etc/yum.repos.d</span><br><span class="line">vim /etc/yum.repos.d/local.repo</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> loacl.repo内容如下</span></span><br><span class="line">name = localrepo #任意取</span><br><span class="line">baseurl = file:///mnt #光盘路径，注意是三条斜杠</span><br><span class="line">enabeld = 1 </span><br><span class="line">gpgcheck = 0 # gpgcheck=0时表示不对GPG-KEY进行检查</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-对yum进行初始化操作（可以略过）"><a href="#3-对yum进行初始化操作（可以略过）" class="headerlink" title="3.对yum进行初始化操作（可以略过）"></a>3.对yum进行初始化操作（可以略过）</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum clean all  #清除缓存</span><br><span class="line">yum makecache   #建立新缓存</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-软件安装"><a href="#4-软件安装" class="headerlink" title="4.软件安装"></a>4.软件安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y (软件名称) </span><br></pre></td></tr></table></figure>
+
+<h2 id="5-恢复原来的环境"><a href="#5-恢复原来的环境" class="headerlink" title="5.恢复原来的环境"></a>5.恢复原来的环境</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rm -rf /etc/yum.repos.d</span><br><span class="line">mv /etc/yum.repos.d.back /etc/yum.repos.d</span><br><span class="line">umount /mnt</span><br></pre></td></tr></table></figure>
+
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T15:39:00+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/centos/" rel="tag"># centos</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/24/PCI%E6%80%BB%E7%BA%BF%E8%AE%BE%E5%A4%87/" itemprop="url">
-            <span itemprop="name">PCI总线设备</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/04/24/%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E5%A4%84%E7%90%86/" rel="prev" title="信息的表示与处理">
+      <i class="fa fa-chevron-left"></i> 信息的表示与处理
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -246,6 +312,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Centos%E4%B8%8Byum%E6%9C%AC%E5%9C%B0%E6%BA%90%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">Centos下yum本地源配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%EF%BC%88%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">1.挂载光盘（安装包）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0yum%E6%BA%90%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.</span> <span class="nav-text">2.创建本地yum源配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%AF%B9yum%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96%E6%93%8D%E4%BD%9C%EF%BC%88%E5%8F%AF%E4%BB%A5%E7%95%A5%E8%BF%87%EF%BC%89"><span class="nav-number">1.3.</span> <span class="nav-text">3.对yum进行初始化操作（可以略过）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="nav-number">1.4.</span> <span class="nav-text">4.软件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%81%A2%E5%A4%8D%E5%8E%9F%E6%9D%A5%E7%9A%84%E7%8E%AF%E5%A2%83"><span class="nav-number">1.5.</span> <span class="nav-text">5.恢复原来的环境</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
