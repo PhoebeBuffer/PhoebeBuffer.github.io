@@ -206,7 +206,7 @@
 </ul>
 <h3 id="浮点运算"><a href="#浮点运算" class="headerlink" title="浮点运算"></a>浮点运算</h3><h3 id="C语言中的浮点数"><a href="#C语言中的浮点数" class="headerlink" title="C语言中的浮点数"></a>C语言中的浮点数</h3><h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5.总结"></a>5.总结</h2>]]></content>
       <categories>
-        <category>深入理解计算机原理</category>
+        <category>深入理解计算机系统</category>
       </categories>
       <tags>
         <tag>信息表示</tag>
@@ -325,6 +325,123 @@
       </categories>
       <tags>
         <tag>DDR3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序的机器级表示</title>
+    <url>/2021/04/27/%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BA%A7%E8%A1%A8%E7%A4%BA/</url>
+    <content><![CDATA[<h1 id="程序的机器级表示"><a href="#程序的机器级表示" class="headerlink" title="程序的机器级表示"></a>程序的机器级表示</h1><h2 id="1-历史观点"><a href="#1-历史观点" class="headerlink" title="1.历史观点"></a>1.历史观点</h2><h2 id="2-程序编码"><a href="#2-程序编码" class="headerlink" title="2.程序编码"></a>2.程序编码</h2><h3 id="机器级代码"><a href="#机器级代码" class="headerlink" title="机器级代码"></a>机器级代码</h3><ul>
+<li><p>指令集体系结构</p>
+<p>定义机器级程序的格式和行为，它定义了处理器状态、指令的格式，以及每条指令对状态的影响</p>
+</li>
+<li><p>内存地址是虚拟地址</p>
+<p>提供的内存模型看上去是一个非常大的字节数组</p>
+</li>
+<li><p>程序计数器（%rip）</p>
+<p>给出将要执行的下一条指令在内存中的地址。</p>
+</li>
+<li><p>整数寄存器文件</p>
+</li>
+<li><p>条件码寄存器</p>
+</li>
+<li><p>向量寄存器</p>
+</li>
+</ul>
+<h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><ul>
+<li>反汇编器</li>
+<li>链接器</li>
+</ul>
+<h3 id="关于格式的注解"><a href="#关于格式的注解" class="headerlink" title="关于格式的注解"></a>关于格式的注解</h3><h2 id="3-数据格式"><a href="#3-数据格式" class="headerlink" title="3.数据格式"></a>3.数据格式</h2><h3 id="字（16位）"><a href="#字（16位）" class="headerlink" title="字（16位）"></a>字（16位）</h3><p>大多数GCC 生成的汇编代码指令都有一个字符的后缀，表明操作数的大小。</p>
+<h2 id="4-访问信息"><a href="#4-访问信息" class="headerlink" title="4.访问信息"></a>4.访问信息</h2><p>一个x86-64 的中央处理单元(CPU) 包含一组16 个存储64 位值的通用目的寄存器。这些寄存器用来存储整数数据和指针。<br>%rax 到 %rbp，%r8 到 %r15 。</p>
+<p>栈指针%rsp，用来指明运行时栈的结束位置</p>
+<p>当这些指令以寄存器作为目标时，对于生成小于8 字节结果的指令，对此有两条规则:<br>生成1 字节和2 字节数字的指令会保持剩下的字节不变;<br>生成4 字节数字的指令会把高位4 个字节置为0 。</p>
+<h3 id="操作数-operand-指示符"><a href="#操作数-operand-指示符" class="headerlink" title="操作数(operand)指示符"></a>操作数(operand)指示符</h3><p>指示出执行一个操作中要使用的源数据<br>值，以及放置结果的目的位置。</p>
+<ul>
+<li><p>立即数</p>
+<p>表示常数值<br>立即数的书写方式是， $后面跟一个用标准C 表示法表示的整数，比如， $-577 或$0x1f</p>
+</li>
+<li><p>寄存器</p>
+<p>用符号ra 来表示任意寄存器a ，用引用R[ra]来表示它的值</p>
+</li>
+<li><p>内存引用</p>
+<p>会根据计算出来的地址(通常称为有效地址)访问某个内存位置。<br>Mb[Addr] 表示对存储在内存中从地址Addr 开始的b 个字节值的引用</p>
+<ul>
+<li><p>寻址模式</p>
+<p>允许不同形式的内存引用<br>表中底部用语法<br>Imm( rb,ri,s) 表示的是最常用的形式</p>
+<p>一个立即数偏移lmm ， 一个基址寄存器rb，一个变址寄存器ri 和一个比例因子s，这里s 必须是1 、2 、4 或者8。基址和变址寄存器都必须是64 位寄存器。有效地址被计算为<br>Imm+ R[ rb] +R[ri] * s 。<br>引用数组元素时，会用到这种通用形式。其他形式都是这种通用形式的特殊情况，只是省略了某些部分。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据传送指令"><a href="#数据传送指令" class="headerlink" title="数据传送指令"></a>数据传送指令</h3><p>最频繁使用的指令是将数据从一个位置复制到另一个位置的指令。</p>
+<ul>
+<li><p>MOV类</p>
+<p>MOV   S ,  D</p>
+<p>movb （1字节）<br>movw  （2字节）<br>movl  （4字节） 以寄存器为目的时，会把高位4字节置0<br>movq  （8字节）</p>
+<p>源操作数指定的值是一个立即数，存储在寄存器中或者内存中。<br>目的操作数指定一个位置，要么是一个寄存器或者，要么是一个内存地址。<br>传送指令的两个操作数不能都指向内存位置。</p>
+<ul>
+<li>MOVZ类</li>
+<li>MOVS类</li>
+</ul>
+</li>
+</ul>
+<h3 id="压入和弹出栈数据"><a href="#压入和弹出栈数据" class="headerlink" title="压入和弹出栈数据"></a>压入和弹出栈数据</h3><ul>
+<li><p>四字（64位）压栈</p>
+<p>栈指针减 8，将新的值写到栈顶</p>
+</li>
+<li><p>四字出栈</p>
+<p>从栈顶读出数据，然后栈指针加 8</p>
+</li>
+</ul>
+<h2 id="5-算术和逻辑"><a href="#5-算术和逻辑" class="headerlink" title="5.算术和逻辑"></a>5.算术和逻辑</h2><p>操作对象：字节、字、双字、四字<br>操作类型：加载有效地址、一元操作、二元操作、移位</p>
+<h3 id="加载有效地址（leaq）"><a href="#加载有效地址（leaq）" class="headerlink" title="加载有效地址（leaq）"></a>加载有效地址（leaq）</h3><p>movq指令的变形，它的第一个操作数看上去是一个内存引用，但该指令并不是从指定的位置读人数据，而是将有效地址写入到目的操作数。</p>
+<h3 id="一元操作和二元操作"><a href="#一元操作和二元操作" class="headerlink" title="一元操作和二元操作"></a>一元操作和二元操作</h3><h3 id="移位操作"><a href="#移位操作" class="headerlink" title="移位操作"></a>移位操作</h3><h3 id="特殊的算术操作"><a href="#特殊的算术操作" class="headerlink" title="特殊的算术操作"></a>特殊的算术操作</h3><p>乘<br>除</p>
+<h2 id="6-控制"><a href="#6-控制" class="headerlink" title="6.控制"></a>6.控制</h2><h3 id="条件码"><a href="#条件码" class="headerlink" title="条件码"></a>条件码</h3><p>CF：进位标志<br>ZF：零标志<br>SF：符号标志<br>OF：溢出标志<br>比较和测试指令</p>
+<h3 id="访问条件码"><a href="#访问条件码" class="headerlink" title="访问条件码"></a>访问条件码</h3><h3 id="跳转指令"><a href="#跳转指令" class="headerlink" title="跳转指令"></a>跳转指令</h3><p>直接跳转<br>间接跳转</p>
+<h3 id="跳转指令的编码"><a href="#跳转指令的编码" class="headerlink" title="跳转指令的编码"></a>跳转指令的编码</h3><h3 id="用条件控制来实现条件分支"><a href="#用条件控制来实现条件分支" class="headerlink" title="用条件控制来实现条件分支"></a>用条件控制来实现条件分支</h3><p>通常使用，但是低效</p>
+<h3 id="用条件传送来实现条件分支"><a href="#用条件传送来实现条件分支" class="headerlink" title="用条件传送来实现条件分支"></a>用条件传送来实现条件分支</h3><p>比条件控制高效，因为流水线、分支预测<br>但是受限，能使用的地方较少</p>
+<h3 id="循环（条件测试-跳转）"><a href="#循环（条件测试-跳转）" class="headerlink" title="循环（条件测试 + 跳转）"></a>循环（条件测试 + 跳转）</h3><h3 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h3><h2 id="7-过程"><a href="#7-过程" class="headerlink" title="7.过程"></a>7.过程</h2><p>过程的形式：函数、方法、子例程、处理函数等<br>过程的机器级支持：传递控制、传递数据、分配和释放内存</p>
+<h3 id="运行时栈"><a href="#运行时栈" class="headerlink" title="运行时栈"></a>运行时栈</h3><p>栈帧</p>
+<h3 id="转移控制"><a href="#转移控制" class="headerlink" title="转移控制"></a>转移控制</h3><p>call</p>
+<h3 id="数据传送"><a href="#数据传送" class="headerlink" title="数据传送"></a>数据传送</h3><p>参数数量小于等于6，寄存器<br>大于6，需要用到栈</p>
+<h3 id="栈上的局部存储"><a href="#栈上的局部存储" class="headerlink" title="栈上的局部存储"></a>栈上的局部存储</h3><p>有些时候，局部数据必须放在内存中<br>a .数量大于6<br>b. 用到了&amp;<br>c. 数组或结构</p>
+<h3 id="寄存器中的局部存储空间"><a href="#寄存器中的局部存储空间" class="headerlink" title="寄存器中的局部存储空间"></a>寄存器中的局部存储空间</h3><p>被调用者保存寄存器，rbx  ,rbp  ,  r12~r15<br>调用者保存寄存器</p>
+<h3 id="递归过程"><a href="#递归过程" class="headerlink" title="递归过程"></a>递归过程</h3><h2 id="8-数组分配和访问"><a href="#8-数组分配和访问" class="headerlink" title="8.数组分配和访问"></a>8.数组分配和访问</h2><h3 id="基本原则"><a href="#基本原则" class="headerlink" title="基本原则"></a>基本原则</h3><p>Xa+L*i</p>
+<h3 id="指针运算"><a href="#指针运算" class="headerlink" title="指针运算"></a>指针运算</h3><h3 id="嵌套的数组"><a href="#嵌套的数组" class="headerlink" title="嵌套的数组"></a>嵌套的数组</h3><p>T D[R] [C];<br>&amp;D[ i ][ j ] = Xd +L（C*i +j )<br>C是列，L是一个数组数据包含 L 个字节</p>
+<h3 id="定长数组"><a href="#定长数组" class="headerlink" title="定长数组"></a>定长数组</h3><h3 id="变长数组"><a href="#变长数组" class="headerlink" title="变长数组"></a>变长数组</h3><h2 id="9-异质的数据结构"><a href="#9-异质的数据结构" class="headerlink" title="9.异质的数据结构"></a>9.异质的数据结构</h2><p>结构（struct）<br>联合（union）</p>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><h3 id="联合"><a href="#联合" class="headerlink" title="联合"></a>联合</h3><h3 id="数据对齐"><a href="#数据对齐" class="headerlink" title="数据对齐"></a>数据对齐</h3><h2 id="10-将控制与数据结合起来"><a href="#10-将控制与数据结合起来" class="headerlink" title="10.将控制与数据结合起来"></a>10.将控制与数据结合起来</h2><h3 id="理解指针"><a href="#理解指针" class="headerlink" title="理解指针"></a>理解指针</h3><ul>
+<li><p>每个指针都对应一个类型</p>
+</li>
+<li><p>每个指针都有一个值</p>
+</li>
+<li><p>指针用 &amp; 运算符创建</p>
+</li>
+<li><ul>
+<li>操作符用于间接引用指针</li>
+</ul>
+</li>
+<li><p>数组与指针紧密联系</p>
+</li>
+<li><p>指针的强制转换</p>
+<p>只改变类型，不改变值<br>char *p<br>(int *)p + 7    ———— p + 28<br>(int *)（p + 7）    ——   p + 7</p>
+</li>
+<li><p>指针也可以指向函数</p>
+<p>int （*f )(int *)  从f开始往外读，指向以int *为参数并返回int的函数指针<br>int * f(int *)  声明了一个函数，以int *为参数，并返回一个int *</p>
+</li>
+</ul>
+<h3 id="GDB调试器"><a href="#GDB调试器" class="headerlink" title="GDB调试器"></a>GDB调试器</h3><h3 id="内存越界引用和缓冲区溢出"><a href="#内存越界引用和缓冲区溢出" class="headerlink" title="内存越界引用和缓冲区溢出"></a>内存越界引用和缓冲区溢出</h3><h3 id="对抗缓冲区溢出攻击"><a href="#对抗缓冲区溢出攻击" class="headerlink" title="对抗缓冲区溢出攻击"></a>对抗缓冲区溢出攻击</h3><ul>
+<li>栈随机化</li>
+<li>栈破坏检测</li>
+<li>限制可执行代码区域</li>
+</ul>
+<h3 id="支持变长栈帧"><a href="#支持变长栈帧" class="headerlink" title="支持变长栈帧"></a>支持变长栈帧</h3><p>栈指针（没看明白，累了）</p>
+<h2 id="11-浮点代码"><a href="#11-浮点代码" class="headerlink" title="11.浮点代码"></a>11.浮点代码</h2><p>%ymm0<del>%ymm15<br>%xmm0</del>%xmm15</p>
+<h3 id="浮点传送和转换操作"><a href="#浮点传送和转换操作" class="headerlink" title="浮点传送和转换操作"></a>浮点传送和转换操作</h3><h3 id="过程中的浮点代码"><a href="#过程中的浮点代码" class="headerlink" title="过程中的浮点代码"></a>过程中的浮点代码</h3><h3 id="浮点运算操作"><a href="#浮点运算操作" class="headerlink" title="浮点运算操作"></a>浮点运算操作</h3><h3 id="定义和使用浮点常数"><a href="#定义和使用浮点常数" class="headerlink" title="定义和使用浮点常数"></a>定义和使用浮点常数</h3><h3 id="在浮点代码中使用位级操作"><a href="#在浮点代码中使用位级操作" class="headerlink" title="在浮点代码中使用位级操作"></a>在浮点代码中使用位级操作</h3><h3 id="浮点比较操作"><a href="#浮点比较操作" class="headerlink" title="浮点比较操作"></a>浮点比较操作</h3>]]></content>
+      <categories>
+        <category>深入理解计算机系统</category>
+      </categories>
+      <tags>
+        <tag>机器级代码</tag>
       </tags>
   </entry>
 </search>
