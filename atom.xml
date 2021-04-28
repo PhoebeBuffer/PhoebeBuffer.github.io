@@ -6,7 +6,7 @@
   <link href="https://www.xding39.com/atom.xml" rel="self"/>
   
   <link href="https://www.xding39.com/"/>
-  <updated>2021-04-27T11:01:06.858Z</updated>
+  <updated>2021-04-28T15:01:55.678Z</updated>
   <id>https://www.xding39.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>处理器体系结构</title>
+    <link href="https://www.xding39.com/2021/04/28/%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    <id>https://www.xding39.com/2021/04/28/%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</id>
+    <published>2021-04-28T14:59:46.000Z</published>
+    <updated>2021-04-28T15:01:55.678Z</updated>
+    
+    
+    <summary type="html">现代微处理器可以称得上是人类创造出的最复杂的系统之一。一块手指甲大小的硅片上，可以容纳一个完整的高性能处理器、大的高速缓存，以及用来连接到外部设备的逻辑电路。。一个处理器支持的指令和指令的字节级编码称为它的指令集体系结构(Instruction-Set Architecture , ISA) 。</summary>
+    
+    
+    
+    <category term="深入理解计算机系统" scheme="https://www.xding39.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="处理器" scheme="https://www.xding39.com/tags/%E5%A4%84%E7%90%86%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>程序的机器级表示</title>

@@ -444,4 +444,28 @@
         <tag>PCI</tag>
       </tags>
   </entry>
+  <entry>
+    <title>处理器体系结构</title>
+    <url>/2021/04/28/%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h1 id="处理器体系结构"><a href="#处理器体系结构" class="headerlink" title="处理器体系结构"></a>处理器体系结构</h1><h2 id="1-Y86-64指令集体系结构"><a href="#1-Y86-64指令集体系结构" class="headerlink" title="1.Y86-64指令集体系结构"></a>1.Y86-64指令集体系结构</h2><p>定义一个指令集体系结构(例如Y86-64 )包括定义各种状态单元、指令集和它们的编码、一组编程规范和异常事件处理。</p>
+<h3 id="程序员可见的状态"><a href="#程序员可见的状态" class="headerlink" title="程序员可见的状态"></a>程序员可见的状态</h3><p>这里的”程序员”既可以是用汇编代码写程序的人，也可以是产生<br>机器级代码的编译器</p>
+<h3 id="Y86-64指令"><a href="#Y86-64指令" class="headerlink" title="Y86-64指令"></a>Y86-64指令</h3><h3 id="指令编码"><a href="#指令编码" class="headerlink" title="指令编码"></a>指令编码</h3><h3 id="Y86-64异常"><a href="#Y86-64异常" class="headerlink" title="Y86-64异常"></a>Y86-64异常</h3><h3 id="Y86-64程序"><a href="#Y86-64程序" class="headerlink" title="Y86-64程序"></a>Y86-64程序</h3><h3 id="一些Y86-64指令的详情"><a href="#一些Y86-64指令的详情" class="headerlink" title="一些Y86-64指令的详情"></a>一些Y86-64指令的详情</h3><h2 id="2-逻辑设计和硬件控制语言HCL"><a href="#2-逻辑设计和硬件控制语言HCL" class="headerlink" title="2.逻辑设计和硬件控制语言HCL"></a>2.逻辑设计和硬件控制语言HCL</h2><h3 id="逻辑门"><a href="#逻辑门" class="headerlink" title="逻辑门"></a>逻辑门</h3><h3 id="组合电路和HCL布尔表达式"><a href="#组合电路和HCL布尔表达式" class="headerlink" title="组合电路和HCL布尔表达式"></a>组合电路和HCL布尔表达式</h3><h3 id="字级的组合电路和HCL整数表达式"><a href="#字级的组合电路和HCL整数表达式" class="headerlink" title="字级的组合电路和HCL整数表达式"></a>字级的组合电路和HCL整数表达式</h3><h3 id="集合关系"><a href="#集合关系" class="headerlink" title="集合关系"></a>集合关系</h3><h3 id="存储器和时钟"><a href="#存储器和时钟" class="headerlink" title="存储器和时钟"></a>存储器和时钟</h3><p>时钟寄存器、随机访问存储器<br>硬件寄存器、程序寄存器</p>
+<h2 id="3-Y86-64的顺序实现（没懂）"><a href="#3-Y86-64的顺序实现（没懂）" class="headerlink" title="3.Y86-64的顺序实现（没懂）"></a>3.Y86-64的顺序实现（没懂）</h2><h3 id="将处理组织成阶段"><a href="#将处理组织成阶段" class="headerlink" title="将处理组织成阶段"></a>将处理组织成阶段</h3><p>取指<br>译码<br>执行<br>访存<br>写回<br>更新</p>
+<h3 id="SEQ硬件结构"><a href="#SEQ硬件结构" class="headerlink" title="SEQ硬件结构"></a>SEQ硬件结构</h3><h2 id="4-流水线的通用原理"><a href="#4-流水线的通用原理" class="headerlink" title="4.流水线的通用原理"></a>4.流水线的通用原理</h2><p>吞吐量（单位时间的顾客总数，顾客就是指令）<br>延迟（服务一个用户所需要的时间）</p>
+<h3 id="计算流水线"><a href="#计算流水线" class="headerlink" title="计算流水线"></a>计算流水线</h3><h3 id="流水线操作的详细说明"><a href="#流水线操作的详细说明" class="headerlink" title="流水线操作的详细说明"></a>流水线操作的详细说明</h3><h3 id="流水线的局限性"><a href="#流水线的局限性" class="headerlink" title="流水线的局限性"></a>流水线的局限性</h3><p>不一样的阶段延迟<br>流水线过深，收益反而下降</p>
+<h3 id="带反馈的流水线系统"><a href="#带反馈的流水线系统" class="headerlink" title="带反馈的流水线系统"></a>带反馈的流水线系统</h3><h2 id="5-Y86-64的流水线实现（必须重看）"><a href="#5-Y86-64的流水线实现（必须重看）" class="headerlink" title="5.Y86-64的流水线实现（必须重看）"></a>5.Y86-64的流水线实现（必须重看）</h2><p>首先，对顺序的SEQ 处理器做一点小的改动，将PC 的计算挪到取指阶段。然后，在各个阶段之间加上流水线寄存器</p>
+<h3 id="重新安排计算阶段"><a href="#重新安排计算阶段" class="headerlink" title="重新安排计算阶段"></a>重新安排计算阶段</h3><p>SEQ+<br>电路重定时</p>
+<h3 id="插入流水线寄存器"><a href="#插入流水线寄存器" class="headerlink" title="插入流水线寄存器"></a>插入流水线寄存器</h3><p>PIPE-处理器（这里的”- “代表这个处理器和最终的处理器设计相比，性能要差一点。）</p>
+<h3 id="对信号进行重新排列和标号"><a href="#对信号进行重新排列和标号" class="headerlink" title="对信号进行重新排列和标号"></a>对信号进行重新排列和标号</h3><h3 id="预测下一个PC"><a href="#预测下一个PC" class="headerlink" title="预测下一个PC"></a>预测下一个PC</h3><h3 id="流水线冒险"><a href="#流水线冒险" class="headerlink" title="流水线冒险"></a>流水线冒险</h3><p>气泡<br>转发<br>加载/使用数据冒险<br>避免控制冒险</p>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>内部异常<br>外部异常</p>
+<h3 id="PIPE各阶段的实现"><a href="#PIPE各阶段的实现" class="headerlink" title="PIPE各阶段的实现"></a>PIPE各阶段的实现</h3><h3 id="流水线控制逻辑"><a href="#流水线控制逻辑" class="headerlink" title="流水线控制逻辑"></a>流水线控制逻辑</h3><h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><p>CPI</p>
+<h3 id="未完成的工作"><a href="#未完成的工作" class="headerlink" title="未完成的工作"></a>未完成的工作</h3><p>多周期指令</p>
+]]></content>
+      <categories>
+        <category>深入理解计算机系统</category>
+      </categories>
+      <tags>
+        <tag>处理器</tag>
+      </tags>
+  </entry>
 </search>
