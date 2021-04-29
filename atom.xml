@@ -6,7 +6,7 @@
   <link href="https://www.xding39.com/atom.xml" rel="self"/>
   
   <link href="https://www.xding39.com/"/>
-  <updated>2021-04-28T15:01:55.678Z</updated>
+  <updated>2021-04-29T15:38:08.613Z</updated>
   <id>https://www.xding39.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>函数回调</title>
+    <link href="https://www.xding39.com/2021/04/29/%E5%87%BD%E6%95%B0%E5%9B%9E%E8%B0%83/"/>
+    <id>https://www.xding39.com/2021/04/29/%E5%87%BD%E6%95%B0%E5%9B%9E%E8%B0%83/</id>
+    <published>2021-04-29T15:35:59.000Z</published>
+    <updated>2021-04-29T15:38:08.613Z</updated>
+    
+    
+    <summary type="html">回调函数就是一个通过函数指针调用的函数。如果你把函数的指针地址作为参数传递给另一个函数，当这个指针被用来调用其所指向的函数时，我们就说这是回调函数。</summary>
+    
+    
+    
+    <category term="C语言" scheme="https://www.xding39.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="函数回调" scheme="https://www.xding39.com/tags/%E5%87%BD%E6%95%B0%E5%9B%9E%E8%B0%83/"/>
+    
+  </entry>
   
   <entry>
     <title>处理器体系结构</title>
