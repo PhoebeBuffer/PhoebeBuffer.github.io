@@ -116,6 +116,23 @@
       </tags>
   </entry>
   <entry>
+    <title>优化程序性能</title>
+    <url>/2021/05/12/%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/</url>
+    <content><![CDATA[<h1 id="优化程序性能"><a href="#优化程序性能" class="headerlink" title="优化程序性能"></a>优化程序性能</h1><h2 id="1-优化编译器的能力和局限性"><a href="#1-优化编译器的能力和局限性" class="headerlink" title="1.优化编译器的能力和局限性"></a>1.优化编译器的能力和局限性</h2><p>内存别名使用<br>函数调用</p>
+<h2 id="2-表示程序性能"><a href="#2-表示程序性能" class="headerlink" title="2.表示程序性能"></a>2.表示程序性能</h2><p>CPE</p>
+<h2 id="3-程序示例"><a href="#3-程序示例" class="headerlink" title="3.程序示例"></a>3.程序示例</h2><h2 id="4-消除循环的低效率"><a href="#4-消除循环的低效率" class="headerlink" title="4.消除循环的低效率"></a>4.消除循环的低效率</h2><h2 id="5-减少过程调用"><a href="#5-减少过程调用" class="headerlink" title="5.减少过程调用"></a>5.减少过程调用</h2><h2 id="6-消除不必要的内存引用"><a href="#6-消除不必要的内存引用" class="headerlink" title="6.消除不必要的内存引用"></a>6.消除不必要的内存引用</h2><h2 id="7-理解现代处理器"><a href="#7-理解现代处理器" class="headerlink" title="7.理解现代处理器"></a>7.理解现代处理器</h2><p>延迟界限<br>吞吐量界限</p>
+<h3 id="整体操作"><a href="#整体操作" class="headerlink" title="整体操作"></a>整体操作</h3><h3 id="功能单元的性能"><a href="#功能单元的性能" class="headerlink" title="功能单元的性能"></a>功能单元的性能</h3><h3 id="处理器操作的抽象模型"><a href="#处理器操作的抽象模型" class="headerlink" title="处理器操作的抽象模型"></a>处理器操作的抽象模型</h3><h2 id="8-循环展开"><a href="#8-循环展开" class="headerlink" title="8.循环展开"></a>8.循环展开</h2><h2 id="9-提高并行性"><a href="#9-提高并行性" class="headerlink" title="9.提高并行性"></a>9.提高并行性</h2><h3 id="多个累积变量"><a href="#多个累积变量" class="headerlink" title="多个累积变量"></a>多个累积变量</h3><h3 id="重新结合变换"><a href="#重新结合变换" class="headerlink" title="重新结合变换"></a>重新结合变换</h3><h2 id="10-优化合并代码的结果小结"><a href="#10-优化合并代码的结果小结" class="headerlink" title="10.优化合并代码的结果小结"></a>10.优化合并代码的结果小结</h2><h2 id="11-一些限制因素"><a href="#11-一些限制因素" class="headerlink" title="11.一些限制因素"></a>11.一些限制因素</h2><h3 id="寄存器溢出"><a href="#寄存器溢出" class="headerlink" title="寄存器溢出"></a>寄存器溢出</h3><h3 id="分支预测和预测错误处罚"><a href="#分支预测和预测错误处罚" class="headerlink" title="分支预测和预测错误处罚"></a>分支预测和预测错误处罚</h3><h2 id="12-理解内存性能"><a href="#12-理解内存性能" class="headerlink" title="12.理解内存性能"></a>12.理解内存性能</h2><h3 id="加载的性能"><a href="#加载的性能" class="headerlink" title="加载的性能"></a>加载的性能</h3><h3 id="存储的性能"><a href="#存储的性能" class="headerlink" title="存储的性能"></a>存储的性能</h3><h2 id="13-应用：性能提高技术"><a href="#13-应用：性能提高技术" class="headerlink" title="13.应用：性能提高技术"></a>13.应用：性能提高技术</h2><h2 id="14-确认和消除性能瓶颈"><a href="#14-确认和消除性能瓶颈" class="headerlink" title="14.确认和消除性能瓶颈"></a>14.确认和消除性能瓶颈</h2><p>代码剖析程序<br>Amdahl定律</p>
+<h3 id="程序剖析"><a href="#程序剖析" class="headerlink" title="程序剖析"></a>程序剖析</h3><p>UNIX的GPROF</p>
+<h3 id="使用剖析程序来指导优化"><a href="#使用剖析程序来指导优化" class="headerlink" title="使用剖析程序来指导优化"></a>使用剖析程序来指导优化</h3><p>有局限性</p>
+<h2 id="15-小结"><a href="#15-小结" class="headerlink" title="15.小结"></a>15.小结</h2>]]></content>
+      <categories>
+        <category>深入理解计算机系统</category>
+      </categories>
+      <tags>
+        <tag>优化程序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>信息的表示与处理</title>
     <url>/2021/04/24/%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[<h1 id="信息的表示和处理"><a href="#信息的表示和处理" class="headerlink" title="信息的表示和处理"></a>信息的表示和处理</h1><h2 id="1-信息存储"><a href="#1-信息存储" class="headerlink" title="1.信息存储"></a>1.信息存储</h2><h3 id="十六进制表示法"><a href="#十六进制表示法" class="headerlink" title="十六进制表示法"></a>十六进制表示法</h3><h3 id="字数据大小"><a href="#字数据大小" class="headerlink" title="字数据大小"></a>字数据大小</h3><ul>
@@ -267,6 +284,224 @@
       </tags>
   </entry>
   <entry>
+    <title>函数回调</title>
+    <url>/2021/04/29/%E5%87%BD%E6%95%B0%E5%9B%9E%E8%B0%83/</url>
+    <content><![CDATA[<p>来源：<a href="https://baike.baidu.com/item/%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/7545973?fr=aladdin">百度百科</a></p>
+<h1 id="函数回调"><a href="#函数回调" class="headerlink" title="函数回调"></a>函数回调</h1><h2 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h2><p>回调函数就是一个通过<a href="https://baike.baidu.com/item/%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/2674905">函数指针</a>调用的函数。如果你把函数的<a href="https://baike.baidu.com/item/%E6%8C%87%E9%92%88/2878304">指针</a>（地址）作为<a href="https://baike.baidu.com/item/%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/9019335">参数传递</a>给另一个函数，当这个指针被用来调用其所指向的函数时，我们就说这是回调函数。==回调函数不是由该函数的实现方直接调用==，而是在特定的事件或条件发生时由另外的一方调用的，用于对该事件或条件进行响应。</p>
+<p>回调是任何一个被以方法为其第一个参数的其它方法的调用的方法。很多时候，回调是一个当某些事件发生时被调用的方法。</p>
+<h2 id="机制"><a href="#机制" class="headerlink" title="机制"></a>机制</h2><p>⑴定义一个回调函数；</p>
+<p>⑵提供函数实现的一方在初始化的时候，将回调函数的函数指针==注册==给调用者；</p>
+<p>⑶当特定的事件或条件发生的时候，调用者==使用函数指针调用回调函数==对事件进行处理。</p>
+<h2 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h2><p>因为可以把调用者与被调用者分开，所以调用者不关心谁是被调用者。它只需知道存在一个具有特定原型和限制条件的<a href="https://baike.baidu.com/item/%E8%A2%AB%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0">被调用函数</a>。简而言之，回调函数就是允许用户把需要调用的函数的指针作为参数传递给一个函数，以便该函数在处理相似事件的时候可以灵活的使用不同的方法。</p>
+<p>想知道回调函数在实际中有什么作用？先假设有这样一种情况：我们要编写一个库，它提供了某些<a href="https://baike.baidu.com/item/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95">排序算法</a>的实现（如<a href="https://baike.baidu.com/item/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">冒泡排序</a>、<a href="https://baike.baidu.com/item/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F">快速排序</a>、<a href="https://baike.baidu.com/item/shell%E6%8E%92%E5%BA%8F">shell排序</a>、shake排序等等），为了能让库更加通用，不想在函数中嵌入排序逻辑，而让使用者来实现相应的逻辑；或者，能让库可用于多种数据类型（int、float、string），此时，该怎么办呢？可以使用函数指针，并进行回调。</p>
+<p>回调可用于通知机制。例如，有时要在A程序中设置一个计时器，每到一定时间，A程序会得到相应的通知，但通知机制的实现者对A程序一无所知。那么，就需一个具有特定原型的函数指针进行回调，通知A程序事件已经发生。实际上，<a href="https://baike.baidu.com/item/API">API</a>使用一个回调函数SetTimer()来通知计时器。如果没有提供回调函数，它还会把一个消息发往程序的<a href="https://baike.baidu.com/item/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97">消息队列</a>。</p>
+<p>另一个使用回调机制的API函数是EnumWindow（），它<a href="https://baike.baidu.com/item/%E6%9E%9A%E4%B8%BE">枚举</a>屏幕上所有的顶层窗口，每个窗口都可以通过它调用另一个程序提供的函数，并传递窗口的处理程序。例如：如果被调用者返回一个值，就继续进行<a href="https://baike.baidu.com/item/%E8%BF%AD%E4%BB%A3">迭代</a>；否则，退出。EnumWindow()并不关心被调用者在何处，也不关心被调用者用它传递的处理程序做了什么，它只关心返回值，因为基于返回值，它将继续执行或退出。</p>
+<p>不管怎么说，回调函数是继承自C语言的。在C++中，应只在与C代码建立接口或与已有的回调接口打交道时，才使用回调函数。除了上述情况，在C++中应使用虚拟方法或<a href="https://baike.baidu.com/item/%E4%BB%BF%E5%87%BD%E6%95%B0">仿函数</a>（functor），而不是回调函数。</p>
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><p>下面创建了一个sort.dll的动态链接库，它导出了一个名为CompareFunction的类型–</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">typedef</span> <span class="title">int</span><span class="params">(__stdcall*CompareFunction)</span><span class="params">(constbyte*,constbyte*）</span></span></span><br></pre></td></tr></table></figure>
+
+<p>它就是回调函数的类型，负责用同样的参数形式将参数传递给相应的具体元素比较函数。另外，通过它，两个不同的排序算法，可以调用和具体元素相关的比较函数，实现和元素类型无关的排序：Bubblesort（）和Quicksort（），这两个方法都用同样的参数原型，但实现了不同的排序算法。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DLLDIR__stdcallBubblesort</span><span class="params">(byte* <span class="built_in">array</span>,<span class="keyword">int</span> size,<span class="keyword">int</span> elem_size,CompareFunction cmpFunc)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DLLDIR__stdcallQuicksort</span><span class="params">(byte* <span class="built_in">array</span>,<span class="keyword">int</span> size,<span class="keyword">int</span> elem_size,CompareFunction cmpFunc)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>这两个函数接受以下参数：</p>
+<p>·byte * array：指向元素数组的指针（任意类型）。</p>
+<p>·int size：数组中元素的个数。</p>
+<p>·int elem_size：数组中一个元素的大小，以字节为单位。</p>
+<p>·CompareFunction cmpFunc：带有上述原型的指向回调函数的指针。</p>
+<p>这两个函数都会对数组进行某种排序，但每次都需决定两个元素哪个排在前面，而函数中有一个回调函数，其地址是作为一个参数传递进来的。对编写者来说，不必介意函数在何处实现，或它怎样被实现的，所需在意的只是两个用于比较的元素的地址，并返回以下的某个值（库的编写者和使用者都必须遵守这个约定）：</p>
+<p>-1：如果第一个元素较小，那它在已排序好的数组中，应该排在第二个元素前面。</p>
+<p>·0：如果两个元素相等，那么它们的相对位置并不重要，在已排序好的数组中，谁在前面都无所谓。</p>
+<p>·1：如果第一个元素较大，那在已排序好的数组中，它应该排第二个元素后面。</p>
+<p>基于以上约定，函数Bubblesort（）的实现如下，Quicksort（）就稍微复杂一点：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> DLLDIR__stdcall <span class="title">Bubblesort</span><span class="params">(byte*<span class="built_in">array</span>,intsize,intelem_size,cmpFunc)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">for</span>(inti=<span class="number">0</span>;i&lt;size;i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span>(intj=<span class="number">0</span>;j&lt;size-i<span class="number">-1</span>;j++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//回调比较函数</span></span><br><span class="line"><span class="keyword">if</span>(<span class="number">1</span>==(*cmpFunc)(<span class="built_in">array</span>+j*elem_size,<span class="built_in">array</span>+(j+<span class="number">1</span>)*elem_size))</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//两个相比较的元素相交换</span></span><br><span class="line">byte* temp=newbyte[elem_size];</span><br><span class="line"><span class="built_in">memcpy</span>(temp,<span class="built_in">array</span>+j*elem_size,elem_size);</span><br><span class="line"><span class="built_in">memcpy</span>(<span class="built_in">array</span>+j*elem_size,<span class="built_in">array</span>+(j+<span class="number">1</span>)*elem_size,elem_size);</span><br><span class="line"><span class="built_in">memcpy</span>(<span class="built_in">array</span>+(j+<span class="number">1</span>)*elem_size,temp,elem_size);</span><br><span class="line"><span class="keyword">delete</span>[]temp;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：因为实现中使用了memcpy（），所以函数在使用的数据类型方面，会有所局限。</p>
+<p>对使用者来说，必须有一个回调函数，其地址要传递给Bubblesort（）函数。下面有二个简单的示例，一个比较两个整数，而另一个比较两个字符串：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">int__stdcall <span class="title">CompareInts</span><span class="params">(constbyte*velem1,constbyte*velem2)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> elem1=*(<span class="keyword">int</span>*)velem1;</span><br><span class="line"><span class="keyword">int</span> elem2=*(<span class="keyword">int</span>*)velem2;</span><br><span class="line"><span class="keyword">if</span>(elem1&lt;elem2)</span><br><span class="line"><span class="keyword">return</span><span class="number">-1</span>;</span><br><span class="line"><span class="keyword">if</span>(elem1&gt;elem2)</span><br><span class="line">return1;</span><br><span class="line">return0;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> __stdcall <span class="title">CompareStrings</span><span class="params">(constbyte*velem1,constbyte*velem2)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* elem1=(<span class="keyword">char</span>*)velem1;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* elem2=(<span class="keyword">char</span>*)velem2;</span><br><span class="line"><span class="keyword">return</span> <span class="built_in">strcmp</span>(elem1,elem2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>下面另有一个程序，用于测试以上所有的代码，它传递了一个有5个元素的<a href="https://baike.baidu.com/item/%E6%95%B0%E7%BB%84">数组</a>给Bubblesort（）和Quicksort（），同时还传递了一个指向回调函数的指针。（使用byte类型需包含头文件windows.h，或</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> unsignedchar byte;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(intargc,<span class="keyword">char</span>*argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> i;</span><br><span class="line"><span class="keyword">int</span> <span class="built_in">array</span>[]=&#123;<span class="number">5432</span>,<span class="number">4321</span>,<span class="number">3210</span>,<span class="number">2109</span>,<span class="number">1098</span>&#125;;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;Before sorting ints with Bubblesort\n&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="built_in">array</span>[i]&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">Bubblesort((byte*)<span class="built_in">array</span>,<span class="number">5</span>,<span class="keyword">sizeof</span>(<span class="built_in">array</span>[<span class="number">0</span>]),&amp;CompareInts);</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;After the sorting\n&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="built_in">array</span>[i]&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> str[<span class="number">5</span>][<span class="number">10</span>]=&#123;<span class="string">&quot;estella&quot;</span>,<span class="string">&quot;danielle&quot;</span>,<span class="string">&quot;crissy&quot;</span>,<span class="string">&quot;bo&quot;</span>,<span class="string">&quot;angie&quot;</span>&#125;;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;Before sorting strings with Quicksort\n&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;str[i]&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">Quicksort((byte*)str,<span class="number">5</span>,<span class="number">10</span>,&amp;CompareStrings);</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;After the sorting\n&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;str[i]&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">return0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果想进行降序排序（大元素在先），就只需修改回调函数的代码，或使用另一个回调函数，这样编程起来灵活性就比较大了。</p>
+<h3 id="调用约定"><a href="#调用约定" class="headerlink" title="调用约定"></a>调用约定</h3><p>上面的代码中，可在函数原型中找到__stdcall，因为它以双下划线打头，所以它是一个特定于编译器的扩展，说到底也就是微软的实现。任何支持开发基于Win32的程序都必须支持这个扩展或其等价物。以__stdcall标识的函数使用了标准调用约定，为什么叫标准约定呢，因为所有的Win32 API（除了个别接受可变参数的除外）都使用它。标准调用约定的函数在它们返回到调用者之前，都会从堆栈中移除掉参数，这也是Pascal的标准约定。但在C/C++中，调用约定是调用者负责清理堆栈，而不是被调用函数；为强制函数使用C/C++调用约定，可使用__cdecl。另外，可变参数函数也使用C/C++调用约定。</p>
+<p>Windows操作系统采用了标准调用约定（Pascal约定），因为其可减小代码的体积。这点对早期的Windows来说非常重要，因为那时它运行在只有640KB内存的电脑上。</p>
+<p>如果你不喜欢__stdcall，还可以使用CALLBACK宏，它定义在windef.h中：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> CALLBACK__stdcallor</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> CALLBACKPASCAL<span class="comment">//而PASCAL在此被#defined成__stdcall</span></span></span><br></pre></td></tr></table></figure>
+
+<p>作为回调函数的C++方法</p>
+<p>因为平时很可能会使用到C++编写代码，也许会想到把回调函数写成类中的一个方法，但先来看看以下的代码：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CCallbackTester</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">CALLBACKCompareInts</span><span class="params">(constbyte*velem1,constbyte*velem2)</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line">Bubblesort((byte*)<span class="built_in">array</span>,<span class="number">5</span>,<span class="keyword">sizeof</span>(<span class="built_in">array</span>[<span class="number">0</span>]),&amp;CCallbackTester::CompareInts);</span><br></pre></td></tr></table></figure>
+
+<p>如果使用微软的编译器，将会得到下面这个编译错误：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">errorC2664:’Bubblesort’:cannotconvertparameter4from’int(__stdcallCCallbackTester::*)(constunsignedchar*,constunsignedchar*）’to’int(__stdcall*)(constunsignedchar*,constunsignedchar*）’There is no context in which this conversion is possible</span><br></pre></td></tr></table></figure>
+
+<p>这是因为非静态成员函数有一个额外的参数：this指针，这将迫使你在成员函数前面加上static。</p>
+]]></content>
+      <categories>
+        <category>C语言</category>
+      </categories>
+      <tags>
+        <tag>函数回调</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>处理器体系结构</title>
+    <url>/2021/04/28/%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h1 id="处理器体系结构"><a href="#处理器体系结构" class="headerlink" title="处理器体系结构"></a>处理器体系结构</h1><h2 id="1-Y86-64指令集体系结构"><a href="#1-Y86-64指令集体系结构" class="headerlink" title="1.Y86-64指令集体系结构"></a>1.Y86-64指令集体系结构</h2><p>定义一个指令集体系结构(例如Y86-64 )包括定义各种状态单元、指令集和它们的编码、一组编程规范和异常事件处理。</p>
+<h3 id="程序员可见的状态"><a href="#程序员可见的状态" class="headerlink" title="程序员可见的状态"></a>程序员可见的状态</h3><p>这里的”程序员”既可以是用汇编代码写程序的人，也可以是产生<br>机器级代码的编译器</p>
+<h3 id="Y86-64指令"><a href="#Y86-64指令" class="headerlink" title="Y86-64指令"></a>Y86-64指令</h3><h3 id="指令编码"><a href="#指令编码" class="headerlink" title="指令编码"></a>指令编码</h3><h3 id="Y86-64异常"><a href="#Y86-64异常" class="headerlink" title="Y86-64异常"></a>Y86-64异常</h3><h3 id="Y86-64程序"><a href="#Y86-64程序" class="headerlink" title="Y86-64程序"></a>Y86-64程序</h3><h3 id="一些Y86-64指令的详情"><a href="#一些Y86-64指令的详情" class="headerlink" title="一些Y86-64指令的详情"></a>一些Y86-64指令的详情</h3><h2 id="2-逻辑设计和硬件控制语言HCL"><a href="#2-逻辑设计和硬件控制语言HCL" class="headerlink" title="2.逻辑设计和硬件控制语言HCL"></a>2.逻辑设计和硬件控制语言HCL</h2><h3 id="逻辑门"><a href="#逻辑门" class="headerlink" title="逻辑门"></a>逻辑门</h3><h3 id="组合电路和HCL布尔表达式"><a href="#组合电路和HCL布尔表达式" class="headerlink" title="组合电路和HCL布尔表达式"></a>组合电路和HCL布尔表达式</h3><h3 id="字级的组合电路和HCL整数表达式"><a href="#字级的组合电路和HCL整数表达式" class="headerlink" title="字级的组合电路和HCL整数表达式"></a>字级的组合电路和HCL整数表达式</h3><h3 id="集合关系"><a href="#集合关系" class="headerlink" title="集合关系"></a>集合关系</h3><h3 id="存储器和时钟"><a href="#存储器和时钟" class="headerlink" title="存储器和时钟"></a>存储器和时钟</h3><p>时钟寄存器、随机访问存储器<br>硬件寄存器、程序寄存器</p>
+<h2 id="3-Y86-64的顺序实现（没懂）"><a href="#3-Y86-64的顺序实现（没懂）" class="headerlink" title="3.Y86-64的顺序实现（没懂）"></a>3.Y86-64的顺序实现（没懂）</h2><h3 id="将处理组织成阶段"><a href="#将处理组织成阶段" class="headerlink" title="将处理组织成阶段"></a>将处理组织成阶段</h3><p>取指<br>译码<br>执行<br>访存<br>写回<br>更新</p>
+<h3 id="SEQ硬件结构"><a href="#SEQ硬件结构" class="headerlink" title="SEQ硬件结构"></a>SEQ硬件结构</h3><h2 id="4-流水线的通用原理"><a href="#4-流水线的通用原理" class="headerlink" title="4.流水线的通用原理"></a>4.流水线的通用原理</h2><p>吞吐量（单位时间的顾客总数，顾客就是指令）<br>延迟（服务一个用户所需要的时间）</p>
+<h3 id="计算流水线"><a href="#计算流水线" class="headerlink" title="计算流水线"></a>计算流水线</h3><h3 id="流水线操作的详细说明"><a href="#流水线操作的详细说明" class="headerlink" title="流水线操作的详细说明"></a>流水线操作的详细说明</h3><h3 id="流水线的局限性"><a href="#流水线的局限性" class="headerlink" title="流水线的局限性"></a>流水线的局限性</h3><p>不一样的阶段延迟<br>流水线过深，收益反而下降</p>
+<h3 id="带反馈的流水线系统"><a href="#带反馈的流水线系统" class="headerlink" title="带反馈的流水线系统"></a>带反馈的流水线系统</h3><h2 id="5-Y86-64的流水线实现（必须重看）"><a href="#5-Y86-64的流水线实现（必须重看）" class="headerlink" title="5.Y86-64的流水线实现（必须重看）"></a>5.Y86-64的流水线实现（必须重看）</h2><p>首先，对顺序的SEQ 处理器做一点小的改动，将PC 的计算挪到取指阶段。然后，在各个阶段之间加上流水线寄存器</p>
+<h3 id="重新安排计算阶段"><a href="#重新安排计算阶段" class="headerlink" title="重新安排计算阶段"></a>重新安排计算阶段</h3><p>SEQ+<br>电路重定时</p>
+<h3 id="插入流水线寄存器"><a href="#插入流水线寄存器" class="headerlink" title="插入流水线寄存器"></a>插入流水线寄存器</h3><p>PIPE-处理器（这里的”- “代表这个处理器和最终的处理器设计相比，性能要差一点。）</p>
+<h3 id="对信号进行重新排列和标号"><a href="#对信号进行重新排列和标号" class="headerlink" title="对信号进行重新排列和标号"></a>对信号进行重新排列和标号</h3><h3 id="预测下一个PC"><a href="#预测下一个PC" class="headerlink" title="预测下一个PC"></a>预测下一个PC</h3><h3 id="流水线冒险"><a href="#流水线冒险" class="headerlink" title="流水线冒险"></a>流水线冒险</h3><p>气泡<br>转发<br>加载/使用数据冒险<br>避免控制冒险</p>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>内部异常<br>外部异常</p>
+<h3 id="PIPE各阶段的实现"><a href="#PIPE各阶段的实现" class="headerlink" title="PIPE各阶段的实现"></a>PIPE各阶段的实现</h3><h3 id="流水线控制逻辑"><a href="#流水线控制逻辑" class="headerlink" title="流水线控制逻辑"></a>流水线控制逻辑</h3><h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><p>CPI</p>
+<h3 id="未完成的工作"><a href="#未完成的工作" class="headerlink" title="未完成的工作"></a>未完成的工作</h3><p>多周期指令</p>
+]]></content>
+      <categories>
+        <category>深入理解计算机系统</category>
+      </categories>
+      <tags>
+        <tag>处理器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>存储器层次结构</title>
+    <url>/2021/05/12/%E5%AD%98%E5%82%A8%E5%99%A8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h1 id="存储器层次结构"><a href="#存储器层次结构" class="headerlink" title="存储器层次结构"></a>存储器层次结构</h1><h2 id="1-存储技术"><a href="#1-存储技术" class="headerlink" title="1.存储技术"></a>1.存储技术</h2><h3 id="随机访问存储器（RAM）"><a href="#随机访问存储器（RAM）" class="headerlink" title="随机访问存储器（RAM）"></a>随机访问存储器（RAM）</h3><ul>
+<li><p>静态（SRAM）</p>
+<p>双稳态<br>钟摆</p>
+</li>
+<li><p>动态（DRAM）</p>
+</li>
+<li><p>传统的DRAM</p>
+</li>
+<li><p>内存模块</p>
+</li>
+<li><p>增强的DRAM</p>
+</li>
+<li><p>非易失性存储器</p>
+</li>
+<li><p>访问主存</p>
+</li>
+</ul>
+<h3 id="磁盘存储"><a href="#磁盘存储" class="headerlink" title="磁盘存储"></a>磁盘存储</h3><ul>
+<li><p>磁盘构造</p>
+</li>
+<li><p>磁盘容量</p>
+</li>
+<li><p>磁盘操作</p>
+</li>
+<li><p>逻辑磁盘块</p>
+</li>
+<li><p>连接IO设备</p>
+</li>
+<li><p>访问磁盘</p>
+<p>内存映射<br>直接内存访问（DMA）</p>
+</li>
+</ul>
+<h3 id="固态硬盘"><a href="#固态硬盘" class="headerlink" title="固态硬盘"></a>固态硬盘</h3><h3 id="存储技术趋势"><a href="#存储技术趋势" class="headerlink" title="存储技术趋势"></a>存储技术趋势</h3><h2 id="2-局部性"><a href="#2-局部性" class="headerlink" title="2.局部性"></a>2.局部性</h2><p>一个编写良好的计算机程序常常具有良好的局部性，它们倾向于引用邻近于其他最近引用过的数据项的数据项，或者最近引用过的数据项本身。这种倾向性，被称为局部性原理(principle of locality )</p>
+<h3 id="对程序数据引用的局部性"><a href="#对程序数据引用的局部性" class="headerlink" title="对程序数据引用的局部性"></a>对程序数据引用的局部性</h3><h3 id="取指令的局部性"><a href="#取指令的局部性" class="headerlink" title="取指令的局部性"></a>取指令的局部性</h3><h2 id="3-存储器层次结构"><a href="#3-存储器层次结构" class="headerlink" title="3.存储器层次结构"></a>3.存储器层次结构</h2><h3 id="缓存（cache）"><a href="#缓存（cache）" class="headerlink" title="缓存（cache）"></a>缓存（cache）</h3><p>低层次作为高层次的缓存</p>
+<ul>
+<li>缓存命中</li>
+<li>缓存不命中</li>
+<li>缓存不命中的种类</li>
+<li>缓存管理</li>
+</ul>
+<h2 id="4-高速缓存存储器"><a href="#4-高速缓存存储器" class="headerlink" title="4.高速缓存存储器"></a>4.高速缓存存储器</h2><h3 id="通用的高速缓存存储器组织结构"><a href="#通用的高速缓存存储器组织结构" class="headerlink" title="通用的高速缓存存储器组织结构"></a>通用的高速缓存存储器组织结构</h3><h3 id="直接映射高速缓存"><a href="#直接映射高速缓存" class="headerlink" title="直接映射高速缓存"></a>直接映射高速缓存</h3><p>E = 1<br>每个组只有一行</p>
+<ul>
+<li><p>组选择</p>
+</li>
+<li><p>行匹配</p>
+</li>
+<li><p>字抽取</p>
+</li>
+<li><p>直接映射高速缓存中不命中时的行替换</p>
+<p>新行替代当前行</p>
+</li>
+<li><p>综合:：运行中的直接映射高速缓存</p>
+</li>
+<li><p>直接映射高速缓存中的冲突不命中</p>
+<p>抖动</p>
+</li>
+</ul>
+<h3 id="组相联高速缓存"><a href="#组相联高速缓存" class="headerlink" title="组相联高速缓存"></a>组相联高速缓存</h3><p>1&lt; E &lt; C/B</p>
+<ul>
+<li>组选择</li>
+<li>行匹配和字选择</li>
+<li>行替换</li>
+</ul>
+<h3 id="全相联高速缓存"><a href="#全相联高速缓存" class="headerlink" title="全相联高速缓存"></a>全相联高速缓存</h3><p>E = C/B<br>只有一个组<br>没有组索引</p>
+<ul>
+<li>组选择</li>
+<li>行匹配和字选择</li>
+</ul>
+<h3 id="有关写的问题"><a href="#有关写的问题" class="headerlink" title="有关写的问题"></a>有关写的问题</h3><ul>
+<li>写命中</li>
+<li>写不命中</li>
+</ul>
+<h3 id="一个真实的高速缓存层次结构的解剖"><a href="#一个真实的高速缓存层次结构的解剖" class="headerlink" title="一个真实的高速缓存层次结构的解剖"></a>一个真实的高速缓存层次结构的解剖</h3><h3 id="高速缓存参数的性能影晌"><a href="#高速缓存参数的性能影晌" class="headerlink" title="高速缓存参数的性能影晌"></a>高速缓存参数的性能影晌</h3><h2 id="5-编写高速缓存友好的代码"><a href="#5-编写高速缓存友好的代码" class="headerlink" title="5.编写高速缓存友好的代码"></a>5.编写高速缓存友好的代码</h2><h3 id="让最常见的情况运行得快"><a href="#让最常见的情况运行得快" class="headerlink" title="让最常见的情况运行得快"></a>让最常见的情况运行得快</h3><h3 id="尽量减小每个循环内部的缓存不命中数量"><a href="#尽量减小每个循环内部的缓存不命中数量" class="headerlink" title="尽量减小每个循环内部的缓存不命中数量"></a>尽量减小每个循环内部的缓存不命中数量</h3><h2 id="6-综合：高速缓存对程序性能的影响"><a href="#6-综合：高速缓存对程序性能的影响" class="headerlink" title="6.综合：高速缓存对程序性能的影响"></a>6.综合：高速缓存对程序性能的影响</h2><h3 id="存储器山（？？）"><a href="#存储器山（？？）" class="headerlink" title="存储器山（？？）"></a>存储器山（？？）</h3><h3 id="重新排列循环以提高空间局部性"><a href="#重新排列循环以提高空间局部性" class="headerlink" title="重新排列循环以提高空间局部性"></a>重新排列循环以提高空间局部性</h3><h3 id="在程序中利用局部性"><a href="#在程序中利用局部性" class="headerlink" title="在程序中利用局部性"></a>在程序中利用局部性</h3><p>将你的注意力集中在内循环上，大部分计算和内存访问都发生在这里。<br>通过按照数据对象存储在内存中的顺序、以步长为1 的来读数据，从而使得你程序中的空间局部性最大。<br>一旦从存储器中读入了一个数据对象，就尽可能多地使用它，从而使得程序中的时间局部性最大。</p>
+<h2 id="7-小结"><a href="#7-小结" class="headerlink" title="7.小结"></a>7.小结</h2>]]></content>
+      <categories>
+        <category>深入理解计算机系统</category>
+      </categories>
+      <tags>
+        <tag>存储器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>并发编程</title>
+    <url>/2021/05/12/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="并发编程"><a href="#并发编程" class="headerlink" title="并发编程"></a>并发编程</h1><p>如果逻辑控制流在时间上重叠，那么它们就是并发的<br>( concurrent) 。这种常见的现象称为并发(concurrency)<br>进程<br>I/O多路复用<br>线程</p>
+<h2 id="1-基于进程的并发编程"><a href="#1-基于进程的并发编程" class="headerlink" title="1.基于进程的并发编程"></a>1.基于进程的并发编程</h2><h3 id="基于进程的并发服务器"><a href="#基于进程的并发服务器" class="headerlink" title="基于进程的并发服务器"></a>基于进程的并发服务器</h3><h3 id="进程的优劣"><a href="#进程的优劣" class="headerlink" title="进程的优劣"></a>进程的优劣</h3><p>对于在父、子进程间共享状态信息，进程有一个非常清晰的模型:共享文件表，但是不共享用户地址空间</p>
+<h2 id="2-基于I-O-多路复用的并发编程"><a href="#2-基于I-O-多路复用的并发编程" class="headerlink" title="2.基于I/O 多路复用的并发编程"></a>2.基于I/O 多路复用的并发编程</h2><h3 id="基于I-O多路复用的并发事件驱动服务器"><a href="#基于I-O多路复用的并发事件驱动服务器" class="headerlink" title="基于I/O多路复用的并发事件驱动服务器"></a>基于I/O多路复用的并发事件驱动服务器</h3><h3 id="I-O多路复用技术的优劣"><a href="#I-O多路复用技术的优劣" class="headerlink" title="I/O多路复用技术的优劣"></a>I/O多路复用技术的优劣</h3><h2 id="3-基于线程的并发编程"><a href="#3-基于线程的并发编程" class="headerlink" title="3.基于线程的并发编程"></a>3.基于线程的并发编程</h2><p>线程( thread) 就是运行在进程上下文中的逻辑流</p>
+<h3 id="线程执行模型"><a href="#线程执行模型" class="headerlink" title="线程执行模型"></a>线程执行模型</h3><h3 id="Posix-线程"><a href="#Posix-线程" class="headerlink" title="Posix 线程"></a>Posix 线程</h3><h3 id="创建线程"><a href="#创建线程" class="headerlink" title="创建线程"></a>创建线程</h3><p>线程通过调用pthread_create 函数来创建其他线程。<br>当pthread_create 返回时，参数tid 包含新创建线程的ID 。新线程可以通过调用pthread_self 函数来获得它自己的线程ID 。</p>
+<h3 id="终止线程"><a href="#终止线程" class="headerlink" title="终止线程"></a>终止线程</h3><h3 id="回收已终止线程的资源"><a href="#回收已终止线程的资源" class="headerlink" title="回收已终止线程的资源"></a>回收已终止线程的资源</h3><p>线程通过调用pthread_join 函数等待其他线程终止。</p>
+<h3 id="分离线程"><a href="#分离线程" class="headerlink" title="分离线程"></a>分离线程</h3><p>可结合的<br>可分离的</p>
+<h3 id="初始化线程"><a href="#初始化线程" class="headerlink" title="初始化线程"></a>初始化线程</h3><p>pthread_once 函数允许你初始化与线程例程相关的状态。</p>
+<h3 id="基于线程的并发服务器"><a href="#基于线程的并发服务器" class="headerlink" title="基于线程的并发服务器"></a>基于线程的并发服务器</h3><h2 id="4-多线程程序中的共享变量"><a href="#4-多线程程序中的共享变量" class="headerlink" title="4.多线程程序中的共享变量"></a>4.多线程程序中的共享变量</h2><h3 id="线程内存模型"><a href="#线程内存模型" class="headerlink" title="线程内存模型"></a>线程内存模型</h3><h3 id="将变量映射到内存"><a href="#将变量映射到内存" class="headerlink" title="将变量映射到内存"></a>将变量映射到内存</h3><h3 id="共享变量"><a href="#共享变量" class="headerlink" title="共享变量"></a>共享变量</h3><h2 id="5-用信号量同步线程"><a href="#5-用信号量同步线程" class="headerlink" title="5.用信号量同步线程"></a>5.用信号量同步线程</h2><h3 id="进度图"><a href="#进度图" class="headerlink" title="进度图"></a>进度图</h3><h3 id="信号量"><a href="#信号量" class="headerlink" title="信号量"></a>信号量</h3><p>P<br>V</p>
+<h3 id="使用信号量来实现互斥"><a href="#使用信号量来实现互斥" class="headerlink" title="使用信号量来实现互斥"></a>使用信号量来实现互斥</h3><h3 id="利用信号量来调度共享资源"><a href="#利用信号量来调度共享资源" class="headerlink" title="利用信号量来调度共享资源"></a>利用信号量来调度共享资源</h3><p>经典而有用的例子是生产者-消费者和读者-写者问题。</p>
+<h3 id="综合-：基于预线程化的并发服务器"><a href="#综合-：基于预线程化的并发服务器" class="headerlink" title="综合:：基于预线程化的并发服务器"></a>综合:：基于预线程化的并发服务器</h3><h2 id="6-使用线程提高并行性"><a href="#6-使用线程提高并行性" class="headerlink" title="6.使用线程提高并行性"></a>6.使用线程提高并行性</h2><h2 id="7-其他并发问题"><a href="#7-其他并发问题" class="headerlink" title="7.其他并发问题"></a>7.其他并发问题</h2><h3 id="线程安全"><a href="#线程安全" class="headerlink" title="线程安全"></a>线程安全</h3><h3 id="可重入性"><a href="#可重入性" class="headerlink" title="可重入性"></a>可重入性</h3><h3 id="在线程化的程序中使用已存在的库函数"><a href="#在线程化的程序中使用已存在的库函数" class="headerlink" title="在线程化的程序中使用已存在的库函数"></a>在线程化的程序中使用已存在的库函数</h3><h3 id="竞争"><a href="#竞争" class="headerlink" title="竞争"></a>竞争</h3><p>当一个程序的正确性依赖于一个线程要在另一个线程到达y 点之前到达它的控制流中的x点时，就会发生竞争(race) 。</p>
+<h3 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h3><p>信号量引入了一种潜在的令人厌恶的运行时错误，叫做死锁(deadlock) ，它指的是一组线程被阻塞了，等待一个永远也不会为真的条件<br>如何避免死锁：<br>互斥锁加锁顺序规则：给定所有互斥操作的一个全序，如果每个线程都是以一种顺序获得互斥锁并以相反的顺序释放，那么这个程序就是无死锁的</p>
+<h2 id="8-小结"><a href="#8-小结" class="headerlink" title="8.小结"></a>8.小结</h2>]]></content>
+      <categories>
+        <category>深入理解计算机系统</category>
+      </categories>
+      <tags>
+        <tag>并发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>系统级IO</title>
+    <url>/2021/05/12/%E7%B3%BB%E7%BB%9F%E7%BA%A7IO/</url>
+    <content><![CDATA[<h1 id="系统级IO"><a href="#系统级IO" class="headerlink" title="系统级IO"></a>系统级IO</h1><p>输入/ 输出（I/O）是在主存和外部设备(例如磁盘驱动器、终端和网络)之间复制数据的过程。<br>输入操作是从I/O设备复制数据到主存，而输出操作是从主存复制数据到I/O设备。</p>
+<h2 id="1-Unix-I-O"><a href="#1-Unix-I-O" class="headerlink" title="1.Unix I/O"></a>1.Unix I/O</h2><p>所有的I/O设备都被模型化为文件。<br>打开文件（描述符）<br>标准输入、标准输出、标准错误<br>改变当前的文件位置（文件位置k）<br>读写文件<br>关闭文件</p>
+<h2 id="2-文件"><a href="#2-文件" class="headerlink" title="2.文件"></a>2.文件</h2><h3 id="普通文件"><a href="#普通文件" class="headerlink" title="普通文件"></a>普通文件</h3><p>文本文件<br>二进制文件</p>
+<h3 id="目录文件"><a href="#目录文件" class="headerlink" title="目录文件"></a>目录文件</h3><p>是包含一组链接( link) 的文件</p>
+<h3 id="套接字"><a href="#套接字" class="headerlink" title="套接字"></a>套接字</h3><p>用来与另一个进程进行跨网络通信的文件</p>
+<h3 id="其他文件"><a href="#其他文件" class="headerlink" title="其他文件"></a>其他文件</h3><h3 id="绝对-相对路径名"><a href="#绝对-相对路径名" class="headerlink" title="绝对/相对路径名"></a>绝对/相对路径名</h3><h2 id="3-打开和关闭文件"><a href="#3-打开和关闭文件" class="headerlink" title="3.打开和关闭文件"></a>3.打开和关闭文件</h2><h3 id="open（）"><a href="#open（）" class="headerlink" title="open（）"></a>open（）</h3><h3 id="close（）"><a href="#close（）" class="headerlink" title="close（）"></a>close（）</h3><h2 id="4-读和写文件"><a href="#4-读和写文件" class="headerlink" title="4.读和写文件"></a>4.读和写文件</h2><p>在某些情况下， read 和write 传送的字节比应用程序要求的要少。这些不足值（short count) 不表示有错误：<br>读时遇到EOF；<br>从终端读文本行；<br>读和写网络套接字</p>
+<h3 id="read（）"><a href="#read（）" class="headerlink" title="read（）"></a>read（）</h3><h3 id="write（）"><a href="#write（）" class="headerlink" title="write（）"></a>write（）</h3><h2 id="5-用RIO-包健壮地读写"><a href="#5-用RIO-包健壮地读写" class="headerlink" title="5.用RIO 包健壮地读写"></a>5.用RIO 包健壮地读写</h2><p>RIO，Robust I/ O ，健壮的I/O包<br>会自动为你处理第4节中所述的不足值</p>
+<h3 id="RIO-的无缓冲的输入输出函数"><a href="#RIO-的无缓冲的输入输出函数" class="headerlink" title="RIO 的无缓冲的输入输出函数"></a>RIO 的无缓冲的输入输出函数</h3><p>函数直接在内存和文件之间传送数据<br>rio_read口和rio_writen</p>
+<h3 id="RIO-的带缓冲的输入函数"><a href="#RIO-的带缓冲的输入函数" class="headerlink" title="RIO 的带缓冲的输入函数"></a>RIO 的带缓冲的输入函数</h3><p>包装函数rio_readlineb它从一个内部读缓冲区复制一个文本行，当缓冲区变空时，会自动地调用read 重新填满缓冲区</p>
+<p>对于既包含文本行也包含二进制数据的文件,我们也提供了一个rio readn 带缓冲区的版本，叫做rio_readn，它从和rio_readlineb 一样的读缓冲区中传送原始字节。</p>
+<h2 id="6-读取文件元数据"><a href="#6-读取文件元数据" class="headerlink" title="6.读取文件元数据"></a>6.读取文件元数据</h2><p>应用程序能够通过调用stat 和fstat 函数，检索到关于文件的信息(有时也称为文件的元数据(metadata) )。</p>
+<h2 id="7-读取目录内容"><a href="#7-读取目录内容" class="headerlink" title="7.读取目录内容"></a>7.读取目录内容</h2><p>d_ino<br>d_name</p>
+<h3 id="opendir（）"><a href="#opendir（）" class="headerlink" title="opendir（）"></a>opendir（）</h3><h3 id="readdir（）"><a href="#readdir（）" class="headerlink" title="readdir（）"></a>readdir（）</h3><h3 id="closedir（）"><a href="#closedir（）" class="headerlink" title="closedir（）"></a>closedir（）</h3><h2 id="8-共享文件"><a href="#8-共享文件" class="headerlink" title="8.共享文件"></a>8.共享文件</h2><p>内核用三个相关的数据结构来表示打开的文件</p>
+<p>每个描述符有自己的文件位置</p>
+<h3 id="描述符表"><a href="#描述符表" class="headerlink" title="描述符表"></a>描述符表</h3><h3 id="文件表"><a href="#文件表" class="headerlink" title="文件表"></a>文件表</h3><h3 id="v-node表"><a href="#v-node表" class="headerlink" title="v-node表"></a>v-node表</h3><h2 id="9-I-O重定向"><a href="#9-I-O重定向" class="headerlink" title="9.I/O重定向"></a>9.I/O重定向</h2><h3 id="dup2（）"><a href="#dup2（）" class="headerlink" title="dup2（）"></a>dup2（）</h3><p>dup2 函数复制描述符表表项oldfd 到描述符表表项newfd ，覆盖描述符表表项newfd以前的内容。<br>如果newfd 已经打开了， dup2 会在复制oldfd 之前关闭newfd 。</p>
+<h2 id="10-标准I-O"><a href="#10-标准I-O" class="headerlink" title="10.标准I/O"></a>10.标准I/O</h2><h3 id="fopen和fclose"><a href="#fopen和fclose" class="headerlink" title="fopen和fclose"></a>fopen和fclose</h3><h3 id="fread和fwrite"><a href="#fread和fwrite" class="headerlink" title="fread和fwrite"></a>fread和fwrite</h3><h3 id="fgets和fputs"><a href="#fgets和fputs" class="headerlink" title="fgets和fputs"></a>fgets和fputs</h3><h3 id="scanf和printf"><a href="#scanf和printf" class="headerlink" title="scanf和printf"></a>scanf和printf</h3><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><h2 id="11-综合-我该使用哪些I-O函数"><a href="#11-综合-我该使用哪些I-O函数" class="headerlink" title="11.综合:我该使用哪些I/O函数?"></a>11.综合:我该使用哪些I/O函数?</h2><p>1.只要有可能就使用标准I/O<br>2.不要使用scanf 或rio_readlineb 来读二进制文件<br>3.对网络套接字的I/O 使用RIO 函数<br>（在网络套接字上，如果你需要格式化的输出，使用sprintf 函数在内存中格式化一个字符串，然后用rio_writen 把它发送到套接口。如果你需要格式化输入，使用rio_readlineb 来读一个完整的文本行，然后用sscanf 从文本行提取不同的字段。）</p>
+<h2 id="12-小结"><a href="#12-小结" class="headerlink" title="12.小结"></a>12.小结</h2>]]></content>
+      <categories>
+        <category>深入理解计算机系统</category>
+      </categories>
+      <tags>
+        <tag>IO</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>程序的机器级表示</title>
     <url>/2021/04/27/%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9C%BA%E5%99%A8%E7%BA%A7%E8%A1%A8%E7%A4%BA/</url>
     <content><![CDATA[<h1 id="程序的机器级表示"><a href="#程序的机器级表示" class="headerlink" title="程序的机器级表示"></a>程序的机器级表示</h1><h2 id="1-历史观点"><a href="#1-历史观点" class="headerlink" title="1.历史观点"></a>1.历史观点</h2><h2 id="2-程序编码"><a href="#2-程序编码" class="headerlink" title="2.程序编码"></a>2.程序编码</h2><h3 id="机器级代码"><a href="#机器级代码" class="headerlink" title="机器级代码"></a>机器级代码</h3><ul>
@@ -384,6 +619,110 @@
       </tags>
   </entry>
   <entry>
+    <title>网络编程</title>
+    <url>/2021/05/12/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h1><h2 id="1-客户端-服务器编程模型"><a href="#1-客户端-服务器编程模型" class="headerlink" title="1.客户端-服务器编程模型"></a>1.客户端-服务器编程模型</h2><p>每个网络应用都是基于客户端-服务器模型的。采用这个模型，一个应用是由一个服务器进程和一个或者多个客户端进程组成。服务器管理某种资源，并且通过操作这种资源来为它的客户端提供某种服务。<br>客户端和服务器都是进程</p>
+<h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><p>1)当一个客户端需要服务时，它向服务器发送一个请求，发起一个事务<br>2) 服务器收到请求后，解释它，并以适当的方式操作它的资源<br>3) 服务器给客户端发送一个响应，并等待下一个请求。<br>4) 客户端收到响应并处理它</p>
+<h2 id="2-网络"><a href="#2-网络" class="headerlink" title="2.网络"></a>2.网络</h2><h3 id="局域网"><a href="#局域网" class="headerlink" title="局域网"></a>局域网</h3><ul>
+<li><p>以太网</p>
+<ul>
+<li>电缆</li>
+<li>网桥</li>
+</ul>
+</li>
+</ul>
+<h3 id="广域网"><a href="#广域网" class="headerlink" title="广域网"></a>广域网</h3><ul>
+<li><p>英特网</p>
+<ul>
+<li><p>路由器</p>
+</li>
+<li><p>协议软件</p>
+<p>命名机制：互联网络地址<br>传送机制：包（包头和有效载荷）</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-全球IP-因特网"><a href="#3-全球IP-因特网" class="headerlink" title="3.全球IP 因特网"></a>3.全球IP 因特网</h2><h3 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h3><p>32 位无符号整数</p>
+<h3 id="英特网域名"><a href="#英特网域名" class="headerlink" title="英特网域名"></a>英特网域名</h3><h3 id="英特网连接"><a href="#英特网连接" class="headerlink" title="英特网连接"></a>英特网连接</h3><h2 id="4-套接字接口"><a href="#4-套接字接口" class="headerlink" title="4.套接字接口"></a>4.套接字接口</h2><h3 id="套接字地址结构"><a href="#套接字地址结构" class="headerlink" title="套接字地址结构"></a>套接字地址结构</h3><h3 id="socket函数"><a href="#socket函数" class="headerlink" title="socket函数"></a>socket函数</h3><h3 id="connect函数"><a href="#connect函数" class="headerlink" title="connect函数"></a>connect函数</h3><h3 id="bind函数"><a href="#bind函数" class="headerlink" title="bind函数"></a>bind函数</h3><h3 id="listen-函数"><a href="#listen-函数" class="headerlink" title="listen 函数"></a>listen 函数</h3><h3 id="accept函数"><a href="#accept函数" class="headerlink" title="accept函数"></a>accept函数</h3><h3 id="主机和服务的转换"><a href="#主机和服务的转换" class="headerlink" title="主机和服务的转换"></a>主机和服务的转换</h3><ul>
+<li><p>getaddrinfo</p>
+<p>getaddrinfo 函数将主机名、主机地址、服务名和端口号的字符串表示转化成套接字地址结构</p>
+</li>
+<li><p>getnameinfo</p>
+<p>getnameinfo函数和getaddrinfo 是相反的，将一个套接字地址结构转换成相应的主机和服务名字符串</p>
+</li>
+</ul>
+<h3 id="套接字接口的辅助函数"><a href="#套接字接口的辅助函数" class="headerlink" title="套接字接口的辅助函数"></a>套接字接口的辅助函数</h3><ul>
+<li><p>open_clientfd</p>
+<p>客户端调用open_clientfd 建立与服务器的连接。</p>
+</li>
+<li><p>open_listenfd</p>
+<p>调用open_listenfd 函数，服务器创建一个监听描述符，准备好接收连接请求。</p>
+</li>
+</ul>
+<h3 id="echo-客户端和服务器的示倒"><a href="#echo-客户端和服务器的示倒" class="headerlink" title="echo 客户端和服务器的示倒"></a>echo 客户端和服务器的示倒</h3><h2 id="5-Web-服务器"><a href="#5-Web-服务器" class="headerlink" title="5.Web 服务器"></a>5.Web 服务器</h2><h3 id="Web-基础"><a href="#Web-基础" class="headerlink" title="Web 基础"></a>Web 基础</h3><p>Web 客户端和服务器之间的交互用的是一个基于文本的应用级协议，叫做HTTPC（Hypertext Transfer Protocol ，超文本传输协议)<br>Web 服务和常规的文件检索服务(例如FTP) 有什么区别呢?主要的区别是Web 内容可以用一种叫做HTMLC（Hypertext Markup Language ，超文本标记语言)的语言来编写。<br>然而， HTML 真正的强大之处在于一个页面可以包含指针(超链接) ，这些指针可以指向存放在任何因特网主机上的内容</p>
+<h3 id="Web-内容"><a href="#Web-内容" class="headerlink" title="Web 内容"></a>Web 内容</h3><p>对于Web 客户端和服务器而言，内容是与一个MIME (Multipurpose Internet Mail Extensions ，多用途的网际邮件扩充协议)类型相关的字节序列</p>
+<h3 id="HTTP-事务"><a href="#HTTP-事务" class="headerlink" title="HTTP 事务"></a>HTTP 事务</h3><p>因为HTTP 是基于在因特网连接上传送的文本行的，我们可以使用Linux 的TELNET程序来和因特网上的任何Web 服务器执行事务。<br>（很多概念，没看完）</p>
+<h3 id="服务动态内容"><a href="#服务动态内容" class="headerlink" title="服务动态内容"></a>服务动态内容</h3><p>CGI</p>
+<ul>
+<li>害户端如何将程序参数传递给服务器</li>
+<li>服务器如何将参数传递给子进程</li>
+<li>服务器如何将其他信息传递给子进程</li>
+<li>子进程将它的输出发送到哪里</li>
+</ul>
+<h2 id="6-综合-TINY-Web-服务器"><a href="#6-综合-TINY-Web-服务器" class="headerlink" title="6.综合:TINY Web 服务器"></a>6.综合:TINY Web 服务器</h2><h2 id="7-小结"><a href="#7-小结" class="headerlink" title="7.小结"></a>7.小结</h2>]]></content>
+      <categories>
+        <category>深入理解计算机系统</category>
+      </categories>
+      <tags>
+        <tag>网络编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟内存</title>
+    <url>/2021/05/12/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</url>
+    <content><![CDATA[<h1 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h1><p>地址空间的概念清楚地区分了数据对象(字节)和它们的属性(地址)。</p>
+<p>允许每个数据对象有多个独立的地址，其中每个地址都选自一个不同的地址空间。这就是虚拟内存的基本思想</p>
+<p>主存中的每字节都有一个选自虚拟地址空间的虚拟地址和一个选自物理地址空间的物理地址。</p>
+<h2 id="1-物理和虚拟寻址"><a href="#1-物理和虚拟寻址" class="headerlink" title="1.物理和虚拟寻址"></a>1.物理和虚拟寻址</h2><h3 id="地址翻译"><a href="#地址翻译" class="headerlink" title="地址翻译"></a>地址翻译</h3><p>虚拟地址—物理地址</p>
+<h3 id="内存管理单元（MMU）"><a href="#内存管理单元（MMU）" class="headerlink" title="内存管理单元（MMU）"></a>内存管理单元（MMU）</h3><h2 id="2-地址空间"><a href="#2-地址空间" class="headerlink" title="2.地址空间"></a>2.地址空间</h2><h2 id="3-虚拟内存作为缓存的工具"><a href="#3-虚拟内存作为缓存的工具" class="headerlink" title="3.虚拟内存作为缓存的工具"></a>3.虚拟内存作为缓存的工具</h2><p>未分配的<br>已缓存的<br>已分配未缓存的</p>
+<h3 id="DRAM组织的缓存结构"><a href="#DRAM组织的缓存结构" class="headerlink" title="DRAM组织的缓存结构"></a>DRAM组织的缓存结构</h3><p>用术语SRAM 缓存来表示位于CPU 和主存之间的L1、L2 和L3 高速缓存<br>用术语DRAM 缓存来表示虚拟内存系统的缓存，它在主存中缓存虚拟页。</p>
+<h3 id="页表"><a href="#页表" class="headerlink" title="页表"></a>页表</h3><p>将虚拟页映射到物理页</p>
+<h3 id="页命中"><a href="#页命中" class="headerlink" title="页命中"></a>页命中</h3><h3 id="缺页"><a href="#缺页" class="headerlink" title="缺页"></a>缺页</h3><h3 id="分配页面"><a href="#分配页面" class="headerlink" title="分配页面"></a>分配页面</h3><h3 id="局部性"><a href="#局部性" class="headerlink" title="局部性"></a>局部性</h3><h2 id="4-虚拟内存作为内存管理的工具"><a href="#4-虚拟内存作为内存管理的工具" class="headerlink" title="4.虚拟内存作为内存管理的工具"></a>4.虚拟内存作为内存管理的工具</h2><h2 id="5-虚拟内存作为内存保护的工具"><a href="#5-虚拟内存作为内存保护的工具" class="headerlink" title="5.虚拟内存作为内存保护的工具"></a>5.虚拟内存作为内存保护的工具</h2><h2 id="6-地址翻译（要重看）"><a href="#6-地址翻译（要重看）" class="headerlink" title="6.地址翻译（要重看）"></a>6.地址翻译（要重看）</h2><h3 id="结合高速缓存和虚拟内存"><a href="#结合高速缓存和虚拟内存" class="headerlink" title="结合高速缓存和虚拟内存"></a>结合高速缓存和虚拟内存</h3><h3 id="利用TLB-加速地址翻译"><a href="#利用TLB-加速地址翻译" class="headerlink" title="利用TLB 加速地址翻译"></a>利用TLB 加速地址翻译</h3><h3 id="多级页表"><a href="#多级页表" class="headerlink" title="多级页表"></a>多级页表</h3><h3 id="综合-：端到端的地址翻译"><a href="#综合-：端到端的地址翻译" class="headerlink" title="综合:：端到端的地址翻译"></a>综合:：端到端的地址翻译</h3><h2 id="7-案例研究-Intel-Core-i7-Li-nux-内存系统"><a href="#7-案例研究-Intel-Core-i7-Li-nux-内存系统" class="headerlink" title="7.案例研究: Intel Core i7/ Li nux 内存系统"></a>7.案例研究: Intel Core i7/ Li nux 内存系统</h2><h3 id="Core-i7-地址翻译"><a href="#Core-i7-地址翻译" class="headerlink" title="Core i7 地址翻译"></a>Core i7 地址翻译</h3><h3 id="Linux虚拟内存系统"><a href="#Linux虚拟内存系统" class="headerlink" title="Linux虚拟内存系统"></a>Linux虚拟内存系统</h3><h2 id="8-内存映射"><a href="#8-内存映射" class="headerlink" title="8.内存映射"></a>8.内存映射</h2><h3 id="再看共享对象"><a href="#再看共享对象" class="headerlink" title="再看共享对象"></a>再看共享对象</h3><h3 id="再看fork函数"><a href="#再看fork函数" class="headerlink" title="再看fork函数"></a>再看fork函数</h3><h3 id="再看execve函数"><a href="#再看execve函数" class="headerlink" title="再看execve函数"></a>再看execve函数</h3><h3 id="使用mmap-函数的用户级内存映射"><a href="#使用mmap-函数的用户级内存映射" class="headerlink" title="使用mmap 函数的用户级内存映射"></a>使用mmap 函数的用户级内存映射</h3><h2 id="9-动态内存分配"><a href="#9-动态内存分配" class="headerlink" title="9.动态内存分配"></a>9.动态内存分配</h2><p>显式分配器<br>隐式分配器</p>
+<h3 id="malloc和free-显式"><a href="#malloc和free-显式" class="headerlink" title="malloc和free(显式)"></a>malloc和free(显式)</h3><h3 id="为什么要使用动态内存分配"><a href="#为什么要使用动态内存分配" class="headerlink" title="为什么要使用动态内存分配"></a>为什么要使用动态内存分配</h3><h3 id="分配器的要求和目标"><a href="#分配器的要求和目标" class="headerlink" title="分配器的要求和目标"></a>分配器的要求和目标</h3><h3 id="碎片"><a href="#碎片" class="headerlink" title="碎片"></a>碎片</h3><p>内部碎片<br>外部碎片</p>
+<h3 id="实现问题"><a href="#实现问题" class="headerlink" title="实现问题"></a>实现问题</h3><h3 id="隐式空闲链表"><a href="#隐式空闲链表" class="headerlink" title="隐式空闲链表"></a>隐式空闲链表</h3><h3 id="放置已分配的块"><a href="#放置已分配的块" class="headerlink" title="放置已分配的块"></a>放置已分配的块</h3><h3 id="分割空闲块"><a href="#分割空闲块" class="headerlink" title="分割空闲块"></a>分割空闲块</h3><h3 id="获取额外的堆内存"><a href="#获取额外的堆内存" class="headerlink" title="获取额外的堆内存"></a>获取额外的堆内存</h3><h3 id="合并空闲块"><a href="#合并空闲块" class="headerlink" title="合并空闲块"></a>合并空闲块</h3><h3 id="带边界标记的合并"><a href="#带边界标记的合并" class="headerlink" title="带边界标记的合并"></a>带边界标记的合并</h3><h3 id="综合：-实现一个简单的分配器"><a href="#综合：-实现一个简单的分配器" class="headerlink" title="综合：:实现一个简单的分配器"></a>综合：:实现一个简单的分配器</h3><h3 id="显示空闲链表"><a href="#显示空闲链表" class="headerlink" title="显示空闲链表"></a>显示空闲链表</h3><h3 id="分离的空闲链表"><a href="#分离的空闲链表" class="headerlink" title="分离的空闲链表"></a>分离的空闲链表</h3><ul>
+<li>简单分离存储</li>
+<li>分离适配</li>
+<li>伙伴系统</li>
+</ul>
+<h2 id="10-垃圾收集"><a href="#10-垃圾收集" class="headerlink" title="10.垃圾收集"></a>10.垃圾收集</h2><h3 id="垃圾收集器的基本知识"><a href="#垃圾收集器的基本知识" class="headerlink" title="垃圾收集器的基本知识"></a>垃圾收集器的基本知识</h3><h3 id="Mark-amp-Sweep-垃圾收集器"><a href="#Mark-amp-Sweep-垃圾收集器" class="headerlink" title="Mark &amp; Sweep 垃圾收集器"></a>Mark &amp; Sweep 垃圾收集器</h3><h2 id="11-C程序中常见的与内存有关的错误"><a href="#11-C程序中常见的与内存有关的错误" class="headerlink" title="11.C程序中常见的与内存有关的错误"></a>11.C程序中常见的与内存有关的错误</h2><h3 id="间接引用坏指针"><a href="#间接引用坏指针" class="headerlink" title="间接引用坏指针"></a>间接引用坏指针</h3><h3 id="读未初始化的内存"><a href="#读未初始化的内存" class="headerlink" title="读未初始化的内存"></a>读未初始化的内存</h3><h3 id="允许栈缓冲区溢出"><a href="#允许栈缓冲区溢出" class="headerlink" title="允许栈缓冲区溢出"></a>允许栈缓冲区溢出</h3><h3 id="假设指针和它们指向的对象是相同大小的"><a href="#假设指针和它们指向的对象是相同大小的" class="headerlink" title="假设指针和它们指向的对象是相同大小的"></a>假设指针和它们指向的对象是相同大小的</h3><h3 id="造成错位错误"><a href="#造成错位错误" class="headerlink" title="造成错位错误"></a>造成错位错误</h3><h3 id="引用指针，而不是它所指向的对象"><a href="#引用指针，而不是它所指向的对象" class="headerlink" title="引用指针，而不是它所指向的对象"></a>引用指针，而不是它所指向的对象</h3><h3 id="误解指针运算"><a href="#误解指针运算" class="headerlink" title="误解指针运算"></a>误解指针运算</h3><h3 id="引用不存在的变量"><a href="#引用不存在的变量" class="headerlink" title="引用不存在的变量"></a>引用不存在的变量</h3><h3 id="引用空闲堆块中的数据"><a href="#引用空闲堆块中的数据" class="headerlink" title="引用空闲堆块中的数据"></a>引用空闲堆块中的数据</h3><h3 id="引起内存泄漏"><a href="#引起内存泄漏" class="headerlink" title="引起内存泄漏"></a>引起内存泄漏</h3><h2 id="12-小结"><a href="#12-小结" class="headerlink" title="12.小结"></a>12.小结</h2>]]></content>
+      <categories>
+        <category>深入理解计算机系统</category>
+      </categories>
+      <tags>
+        <tag>虚拟内存</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>链接</title>
+    <url>/2021/05/12/%E9%93%BE%E6%8E%A5/</url>
+    <content><![CDATA[<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p>链接(linking) 是将各种代码和数据片段收集并组合成为一个单一文件的过程，这个文件可被加载(复制)到内存并执行</p>
+<h2 id="1-编译器驱动程序"><a href="#1-编译器驱动程序" class="headerlink" title="1.编译器驱动程序"></a>1.编译器驱动程序</h2><h2 id="2-静态链接"><a href="#2-静态链接" class="headerlink" title="2.静态链接"></a>2.静态链接</h2><p>符号解析<br>重定位</p>
+<h2 id="3-目标文件"><a href="#3-目标文件" class="headerlink" title="3.目标文件"></a>3.目标文件</h2><p>编译器和汇编器生成可重定位目标文件(包括共享目标文件)。<br>链接器生成可执行目标文件。</p>
+<h3 id="可重定位目标文件"><a href="#可重定位目标文件" class="headerlink" title="可重定位目标文件"></a>可重定位目标文件</h3><h3 id="可执行目标文件"><a href="#可执行目标文件" class="headerlink" title="可执行目标文件"></a>可执行目标文件</h3><h3 id="共享目标文件"><a href="#共享目标文件" class="headerlink" title="共享目标文件"></a>共享目标文件</h3><h2 id="4-可重定位目标文件"><a href="#4-可重定位目标文件" class="headerlink" title="4.可重定位目标文件"></a>4.可重定位目标文件</h2><h2 id="5-符号和符号表"><a href="#5-符号和符号表" class="headerlink" title="5.符号和符号表"></a>5.符号和符号表</h2><h3 id="全局符号"><a href="#全局符号" class="headerlink" title="全局符号"></a>全局符号</h3><h3 id="外部符号"><a href="#外部符号" class="headerlink" title="外部符号"></a>外部符号</h3><h3 id="局部符号"><a href="#局部符号" class="headerlink" title="局部符号"></a>局部符号</h3><h2 id="6-符号解析"><a href="#6-符号解析" class="headerlink" title="6.符号解析"></a>6.符号解析</h2><h3 id="链接器如何解析多重定义的全局符号"><a href="#链接器如何解析多重定义的全局符号" class="headerlink" title="链接器如何解析多重定义的全局符号"></a>链接器如何解析多重定义的全局符号</h3><p>强符号<br>弱符号</p>
+<h3 id="与静态库链接"><a href="#与静态库链接" class="headerlink" title="与静态库链接"></a>与静态库链接</h3><h3 id="链接器如何使用静态库来解析引用"><a href="#链接器如何使用静态库来解析引用" class="headerlink" title="链接器如何使用静态库来解析引用"></a>链接器如何使用静态库来解析引用</h3><h2 id="7-重定位"><a href="#7-重定位" class="headerlink" title="7.重定位"></a>7.重定位</h2><h3 id="重定位条目"><a href="#重定位条目" class="headerlink" title="重定位条目"></a>重定位条目</h3><h3 id="重定位符号引用"><a href="#重定位符号引用" class="headerlink" title="重定位符号引用"></a>重定位符号引用</h3><h2 id="8-可执行目标文件"><a href="#8-可执行目标文件" class="headerlink" title="8.可执行目标文件"></a>8.可执行目标文件</h2><h2 id="9-加载可执行目标文件"><a href="#9-加载可执行目标文件" class="headerlink" title="9.加载可执行目标文件"></a>9.加载可执行目标文件</h2><h2 id="10-动态链接共享库"><a href="#10-动态链接共享库" class="headerlink" title="10.动态链接共享库"></a>10.动态链接共享库</h2><h2 id="11-从应用程序中加载和链接共享库"><a href="#11-从应用程序中加载和链接共享库" class="headerlink" title="11.从应用程序中加载和链接共享库"></a>11.从应用程序中加载和链接共享库</h2><h2 id="12-位置无关代码"><a href="#12-位置无关代码" class="headerlink" title="12.位置无关代码"></a>12.位置无关代码</h2><h2 id="13-库打桩机制"><a href="#13-库打桩机制" class="headerlink" title="13.库打桩机制"></a>13.库打桩机制</h2><p>它允许你截获对共享库函数的调用，取而代之执行自己的代码</p>
+<h3 id="编译时打桩"><a href="#编译时打桩" class="headerlink" title="编译时打桩"></a>编译时打桩</h3><p>访问程序的源代码</p>
+<h3 id="链接时打桩"><a href="#链接时打桩" class="headerlink" title="链接时打桩"></a>链接时打桩</h3><p>访问程序的可重定位程序文件</p>
+<h3 id="运行时打桩"><a href="#运行时打桩" class="headerlink" title="运行时打桩"></a>运行时打桩</h3><p>访问可执行目标文件</p>
+<h2 id="14-处理目标文件的工具"><a href="#14-处理目标文件的工具" class="headerlink" title="14.处理目标文件的工具"></a>14.处理目标文件的工具</h2><p>GNU binutils</p>
+<h2 id="15-小结"><a href="#15-小结" class="headerlink" title="15.小结"></a>15.小结</h2>]]></content>
+      <categories>
+        <category>深入理解计算机系统</category>
+      </categories>
+      <tags>
+        <tag>链接</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PCI总线设备</title>
     <url>/2021/04/24/PCI%E6%80%BB%E7%BA%BF%E8%AE%BE%E5%A4%87/</url>
     <content><![CDATA[<h1 id="PCI总线设备"><a href="#PCI总线设备" class="headerlink" title="PCI总线设备"></a>PCI总线设备</h1><h2 id="PCI总线"><a href="#PCI总线" class="headerlink" title="PCI总线"></a>PCI总线</h2><p>​       PCI是外围设备互连（Peripheral Component Interconnect）的简称，作为一种通用的总线标准接口。</p>
@@ -445,105 +784,74 @@
       </tags>
   </entry>
   <entry>
-    <title>处理器体系结构</title>
-    <url>/2021/04/28/%E5%A4%84%E7%90%86%E5%99%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h1 id="处理器体系结构"><a href="#处理器体系结构" class="headerlink" title="处理器体系结构"></a>处理器体系结构</h1><h2 id="1-Y86-64指令集体系结构"><a href="#1-Y86-64指令集体系结构" class="headerlink" title="1.Y86-64指令集体系结构"></a>1.Y86-64指令集体系结构</h2><p>定义一个指令集体系结构(例如Y86-64 )包括定义各种状态单元、指令集和它们的编码、一组编程规范和异常事件处理。</p>
-<h3 id="程序员可见的状态"><a href="#程序员可见的状态" class="headerlink" title="程序员可见的状态"></a>程序员可见的状态</h3><p>这里的”程序员”既可以是用汇编代码写程序的人，也可以是产生<br>机器级代码的编译器</p>
-<h3 id="Y86-64指令"><a href="#Y86-64指令" class="headerlink" title="Y86-64指令"></a>Y86-64指令</h3><h3 id="指令编码"><a href="#指令编码" class="headerlink" title="指令编码"></a>指令编码</h3><h3 id="Y86-64异常"><a href="#Y86-64异常" class="headerlink" title="Y86-64异常"></a>Y86-64异常</h3><h3 id="Y86-64程序"><a href="#Y86-64程序" class="headerlink" title="Y86-64程序"></a>Y86-64程序</h3><h3 id="一些Y86-64指令的详情"><a href="#一些Y86-64指令的详情" class="headerlink" title="一些Y86-64指令的详情"></a>一些Y86-64指令的详情</h3><h2 id="2-逻辑设计和硬件控制语言HCL"><a href="#2-逻辑设计和硬件控制语言HCL" class="headerlink" title="2.逻辑设计和硬件控制语言HCL"></a>2.逻辑设计和硬件控制语言HCL</h2><h3 id="逻辑门"><a href="#逻辑门" class="headerlink" title="逻辑门"></a>逻辑门</h3><h3 id="组合电路和HCL布尔表达式"><a href="#组合电路和HCL布尔表达式" class="headerlink" title="组合电路和HCL布尔表达式"></a>组合电路和HCL布尔表达式</h3><h3 id="字级的组合电路和HCL整数表达式"><a href="#字级的组合电路和HCL整数表达式" class="headerlink" title="字级的组合电路和HCL整数表达式"></a>字级的组合电路和HCL整数表达式</h3><h3 id="集合关系"><a href="#集合关系" class="headerlink" title="集合关系"></a>集合关系</h3><h3 id="存储器和时钟"><a href="#存储器和时钟" class="headerlink" title="存储器和时钟"></a>存储器和时钟</h3><p>时钟寄存器、随机访问存储器<br>硬件寄存器、程序寄存器</p>
-<h2 id="3-Y86-64的顺序实现（没懂）"><a href="#3-Y86-64的顺序实现（没懂）" class="headerlink" title="3.Y86-64的顺序实现（没懂）"></a>3.Y86-64的顺序实现（没懂）</h2><h3 id="将处理组织成阶段"><a href="#将处理组织成阶段" class="headerlink" title="将处理组织成阶段"></a>将处理组织成阶段</h3><p>取指<br>译码<br>执行<br>访存<br>写回<br>更新</p>
-<h3 id="SEQ硬件结构"><a href="#SEQ硬件结构" class="headerlink" title="SEQ硬件结构"></a>SEQ硬件结构</h3><h2 id="4-流水线的通用原理"><a href="#4-流水线的通用原理" class="headerlink" title="4.流水线的通用原理"></a>4.流水线的通用原理</h2><p>吞吐量（单位时间的顾客总数，顾客就是指令）<br>延迟（服务一个用户所需要的时间）</p>
-<h3 id="计算流水线"><a href="#计算流水线" class="headerlink" title="计算流水线"></a>计算流水线</h3><h3 id="流水线操作的详细说明"><a href="#流水线操作的详细说明" class="headerlink" title="流水线操作的详细说明"></a>流水线操作的详细说明</h3><h3 id="流水线的局限性"><a href="#流水线的局限性" class="headerlink" title="流水线的局限性"></a>流水线的局限性</h3><p>不一样的阶段延迟<br>流水线过深，收益反而下降</p>
-<h3 id="带反馈的流水线系统"><a href="#带反馈的流水线系统" class="headerlink" title="带反馈的流水线系统"></a>带反馈的流水线系统</h3><h2 id="5-Y86-64的流水线实现（必须重看）"><a href="#5-Y86-64的流水线实现（必须重看）" class="headerlink" title="5.Y86-64的流水线实现（必须重看）"></a>5.Y86-64的流水线实现（必须重看）</h2><p>首先，对顺序的SEQ 处理器做一点小的改动，将PC 的计算挪到取指阶段。然后，在各个阶段之间加上流水线寄存器</p>
-<h3 id="重新安排计算阶段"><a href="#重新安排计算阶段" class="headerlink" title="重新安排计算阶段"></a>重新安排计算阶段</h3><p>SEQ+<br>电路重定时</p>
-<h3 id="插入流水线寄存器"><a href="#插入流水线寄存器" class="headerlink" title="插入流水线寄存器"></a>插入流水线寄存器</h3><p>PIPE-处理器（这里的”- “代表这个处理器和最终的处理器设计相比，性能要差一点。）</p>
-<h3 id="对信号进行重新排列和标号"><a href="#对信号进行重新排列和标号" class="headerlink" title="对信号进行重新排列和标号"></a>对信号进行重新排列和标号</h3><h3 id="预测下一个PC"><a href="#预测下一个PC" class="headerlink" title="预测下一个PC"></a>预测下一个PC</h3><h3 id="流水线冒险"><a href="#流水线冒险" class="headerlink" title="流水线冒险"></a>流水线冒险</h3><p>气泡<br>转发<br>加载/使用数据冒险<br>避免控制冒险</p>
-<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>内部异常<br>外部异常</p>
-<h3 id="PIPE各阶段的实现"><a href="#PIPE各阶段的实现" class="headerlink" title="PIPE各阶段的实现"></a>PIPE各阶段的实现</h3><h3 id="流水线控制逻辑"><a href="#流水线控制逻辑" class="headerlink" title="流水线控制逻辑"></a>流水线控制逻辑</h3><h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><p>CPI</p>
-<h3 id="未完成的工作"><a href="#未完成的工作" class="headerlink" title="未完成的工作"></a>未完成的工作</h3><p>多周期指令</p>
-]]></content>
+    <title>异常控制流</title>
+    <url>/2021/05/12/%E5%BC%82%E5%B8%B8%E6%8E%A7%E5%88%B6%E6%B5%81/</url>
+    <content><![CDATA[<h1 id="异常控制流"><a href="#异常控制流" class="headerlink" title="异常控制流"></a>异常控制流</h1><h2 id="1-异常"><a href="#1-异常" class="headerlink" title="1.异常"></a>1.异常</h2><p>异常是异常控制流的一种形式，它一部分由硬件实现，一部分由操作系统实现。<br>异常( exception) 就是控制流中的突变，用来响应处理器状态中的某些变化。<br>事件<br>异常表</p>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><ul>
+<li>异常号</li>
+<li>异常表</li>
+<li>异常表基址寄存器</li>
+</ul>
+<h3 id="异常的类别"><a href="#异常的类别" class="headerlink" title="异常的类别"></a>异常的类别</h3><ul>
+<li><p>中断</p>
+<p>中断是异步发生的，是来自处理器外部的I/ O 设备的信号的结果。<br>硬件中断不是由任何一条专门的指令造成的，从这个意义上来说它是异步的。<br>中断处理程序<br>将控制返回到下一条指令</p>
+</li>
+<li><p>陷阱</p>
+<p>陷阱是有意的异常，是执行一条指令的结果<br>将控制返回到下一条指令<br>最重要的用途是系统调用<br>syscall</p>
+</li>
+<li><p>故障</p>
+<p>故障由错误情况引起，它可能能够被故障处理程序修正<br>要么重新执行当前指令，要么终止</p>
+</li>
+<li><p>终止</p>
+<p>不可恢复的致命错误造成的结果，通常是硬件错误<br>abort</p>
+</li>
+</ul>
+<h3 id="Linux-x86-64-系统中的异常"><a href="#Linux-x86-64-系统中的异常" class="headerlink" title="Linux/x86-64 系统中的异常"></a>Linux/x86-64 系统中的异常</h3><ul>
+<li><p>Linux/x86-64 故障和终止</p>
+<p>除法错误（0）<br>一般保护故障（13）（段错误）<br>缺页（14）<br>机器检查（18）</p>
+</li>
+<li><p>Linux/86-64 系统调用</p>
+<p>系统级函数</p>
+</li>
+</ul>
+<h2 id="2-进程"><a href="#2-进程" class="headerlink" title="2.进程"></a>2.进程</h2><p>异常是允许操作系统内核提供进程( process) 概念的基本构造块<br>关键抽象：一个独立的逻辑控制流（好像程序独占的使用处理器），一个私有的地址空间（好像程序独占的使用内存系统）</p>
+<h3 id="逻辑控制流"><a href="#逻辑控制流" class="headerlink" title="逻辑控制流"></a>逻辑控制流</h3><h3 id="并发流"><a href="#并发流" class="headerlink" title="并发流"></a>并发流</h3><p>一个逻辑流的执行在时间上与另一个流重叠，称为并发流</p>
+<h3 id="私有地址空间"><a href="#私有地址空间" class="headerlink" title="私有地址空间"></a>私有地址空间</h3><h3 id="用户模式和内核模式"><a href="#用户模式和内核模式" class="headerlink" title="用户模式和内核模式"></a>用户模式和内核模式</h3><p>模式位<br>进程从用户模式变为内核模式的唯一方法是通过诸如中断、故障或者陷入系统调用这样的异常。<br>当异常发生时，控制传递到异常处理程序，处理器将模式从用户模式变为内核模式。处理程序运行在内核模式中，当它返回到应用程序代码时，处理器就把模式从内核模式改回到用户模式。</p>
+<h3 id="上下文切换"><a href="#上下文切换" class="headerlink" title="上下文切换"></a>上下文切换</h3><p>操作系统内核使用一种称为上下文切换（context switch) 的较高层形式的异常控制流来实现多任务。<br>上下文切换机制是建立在8. 1 节中已经讨论过的那些较低层异常机制之上的<br>上下文切换1)保存当前进程的上下文， 2) 恢复某个先前被抢占的进程被保存的上下文， 3) 将控制传递给这个新恢复的进程。</p>
+<h2 id="3-系统调用错误处理"><a href="#3-系统调用错误处理" class="headerlink" title="3.系统调用错误处理"></a>3.系统调用错误处理</h2><p>错误处理包装函数<br>Fork（）</p>
+<h2 id="4-进程控制"><a href="#4-进程控制" class="headerlink" title="4.进程控制"></a>4.进程控制</h2><p>从C程序中操作进程的系统调用</p>
+<h3 id="获取进程ID"><a href="#获取进程ID" class="headerlink" title="获取进程ID"></a>获取进程ID</h3><p>进程PID<br>pid_t getpid(void);   //获取进程ID<br>pid_t getppid(void);  //获取父进程ID</p>
+<h3 id="创建和终止进程"><a href="#创建和终止进程" class="headerlink" title="创建和终止进程"></a>创建和终止进程</h3><p>进程总是处在下面三种状态之一：运行、停止（挂起）、终止</p>
+<p>父进程通过调用fork函数创建一个新的运行的子进程</p>
+<h3 id="回收子进程"><a href="#回收子进程" class="headerlink" title="回收子进程"></a>回收子进程</h3><p>pid_t waitpid(pid_t pid , int *statusp , int options);</p>
+<h3 id="让进程休眠"><a href="#让进程休眠" class="headerlink" title="让进程休眠"></a>让进程休眠</h3><p>sleep<br>pause</p>
+<h3 id="加载并运行程序"><a href="#加载并运行程序" class="headerlink" title="加载并运行程序"></a>加载并运行程序</h3><p>execve<br>execve 调用一次并从不返回。</p>
+<h3 id="利用fork-和execve-运行程序"><a href="#利用fork-和execve-运行程序" class="headerlink" title="利用fork 和execve 运行程序"></a>利用fork 和execve 运行程序</h3><h2 id="5-信号"><a href="#5-信号" class="headerlink" title="5.信号"></a>5.信号</h2><h3 id="信号术语"><a href="#信号术语" class="headerlink" title="信号术语"></a>信号术语</h3><ul>
+<li>发送信号</li>
+<li>接收信号</li>
+</ul>
+<h3 id="发送信号"><a href="#发送信号" class="headerlink" title="发送信号"></a>发送信号</h3><ul>
+<li>进程组</li>
+<li>用/bin/kill 程序发送信号</li>
+<li>从键盘发送信号</li>
+<li>用kill 函数发送信号</li>
+<li>用alarm 函数发送信号</li>
+</ul>
+<h3 id="接收信号"><a href="#接收信号" class="headerlink" title="接收信号"></a>接收信号</h3><h3 id="阻塞和解除阻塞信号"><a href="#阻塞和解除阻塞信号" class="headerlink" title="阻塞和解除阻塞信号"></a>阻塞和解除阻塞信号</h3><h3 id="编写信号处理程序"><a href="#编写信号处理程序" class="headerlink" title="编写信号处理程序"></a>编写信号处理程序</h3><ul>
+<li><p>安全的信号处理</p>
+<p>使得处理程序尽可能简单，调用安全函数，保存和恢复errno ，保护对共享数据结构的访问，并使用volatile 和sig_atomic_t</p>
+</li>
+<li><p>正确的信号处理</p>
+</li>
+<li><p>可移植的信号处理</p>
+</li>
+</ul>
+<h3 id="同步流以避免讨厌的并发错误"><a href="#同步流以避免讨厌的并发错误" class="headerlink" title="同步流以避免讨厌的并发错误"></a>同步流以避免讨厌的并发错误</h3><h3 id="显式地等待信号"><a href="#显式地等待信号" class="headerlink" title="显式地等待信号"></a>显式地等待信号</h3><h2 id="6-非本地跳转"><a href="#6-非本地跳转" class="headerlink" title="6.非本地跳转"></a>6.非本地跳转</h2><h2 id="7-操作进程的工具"><a href="#7-操作进程的工具" class="headerlink" title="7.操作进程的工具"></a>7.操作进程的工具</h2><h2 id="8-小结"><a href="#8-小结" class="headerlink" title="8.小结"></a>8.小结</h2>]]></content>
       <categories>
         <category>深入理解计算机系统</category>
       </categories>
       <tags>
-        <tag>处理器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>函数回调</title>
-    <url>/2021/04/29/%E5%87%BD%E6%95%B0%E5%9B%9E%E8%B0%83/</url>
-    <content><![CDATA[<p>来源：<a href="https://baike.baidu.com/item/%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0/7545973?fr=aladdin">百度百科</a></p>
-<h1 id="函数回调"><a href="#函数回调" class="headerlink" title="函数回调"></a>函数回调</h1><h2 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h2><p>回调函数就是一个通过<a href="https://baike.baidu.com/item/%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/2674905">函数指针</a>调用的函数。如果你把函数的<a href="https://baike.baidu.com/item/%E6%8C%87%E9%92%88/2878304">指针</a>（地址）作为<a href="https://baike.baidu.com/item/%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/9019335">参数传递</a>给另一个函数，当这个指针被用来调用其所指向的函数时，我们就说这是回调函数。==回调函数不是由该函数的实现方直接调用==，而是在特定的事件或条件发生时由另外的一方调用的，用于对该事件或条件进行响应。</p>
-<p>回调是任何一个被以方法为其第一个参数的其它方法的调用的方法。很多时候，回调是一个当某些事件发生时被调用的方法。</p>
-<h2 id="机制"><a href="#机制" class="headerlink" title="机制"></a>机制</h2><p>⑴定义一个回调函数；</p>
-<p>⑵提供函数实现的一方在初始化的时候，将回调函数的函数指针==注册==给调用者；</p>
-<p>⑶当特定的事件或条件发生的时候，调用者==使用函数指针调用回调函数==对事件进行处理。</p>
-<h2 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h2><p>因为可以把调用者与被调用者分开，所以调用者不关心谁是被调用者。它只需知道存在一个具有特定原型和限制条件的<a href="https://baike.baidu.com/item/%E8%A2%AB%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0">被调用函数</a>。简而言之，回调函数就是允许用户把需要调用的函数的指针作为参数传递给一个函数，以便该函数在处理相似事件的时候可以灵活的使用不同的方法。</p>
-<p>想知道回调函数在实际中有什么作用？先假设有这样一种情况：我们要编写一个库，它提供了某些<a href="https://baike.baidu.com/item/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95">排序算法</a>的实现（如<a href="https://baike.baidu.com/item/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">冒泡排序</a>、<a href="https://baike.baidu.com/item/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F">快速排序</a>、<a href="https://baike.baidu.com/item/shell%E6%8E%92%E5%BA%8F">shell排序</a>、shake排序等等），为了能让库更加通用，不想在函数中嵌入排序逻辑，而让使用者来实现相应的逻辑；或者，能让库可用于多种数据类型（int、float、string），此时，该怎么办呢？可以使用函数指针，并进行回调。</p>
-<p>回调可用于通知机制。例如，有时要在A程序中设置一个计时器，每到一定时间，A程序会得到相应的通知，但通知机制的实现者对A程序一无所知。那么，就需一个具有特定原型的函数指针进行回调，通知A程序事件已经发生。实际上，<a href="https://baike.baidu.com/item/API">API</a>使用一个回调函数SetTimer()来通知计时器。如果没有提供回调函数，它还会把一个消息发往程序的<a href="https://baike.baidu.com/item/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97">消息队列</a>。</p>
-<p>另一个使用回调机制的API函数是EnumWindow（），它<a href="https://baike.baidu.com/item/%E6%9E%9A%E4%B8%BE">枚举</a>屏幕上所有的顶层窗口，每个窗口都可以通过它调用另一个程序提供的函数，并传递窗口的处理程序。例如：如果被调用者返回一个值，就继续进行<a href="https://baike.baidu.com/item/%E8%BF%AD%E4%BB%A3">迭代</a>；否则，退出。EnumWindow()并不关心被调用者在何处，也不关心被调用者用它传递的处理程序做了什么，它只关心返回值，因为基于返回值，它将继续执行或退出。</p>
-<p>不管怎么说，回调函数是继承自C语言的。在C++中，应只在与C代码建立接口或与已有的回调接口打交道时，才使用回调函数。除了上述情况，在C++中应使用虚拟方法或<a href="https://baike.baidu.com/item/%E4%BB%BF%E5%87%BD%E6%95%B0">仿函数</a>（functor），而不是回调函数。</p>
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><p>下面创建了一个sort.dll的动态链接库，它导出了一个名为CompareFunction的类型–</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">typedef</span> <span class="title">int</span><span class="params">(__stdcall*CompareFunction)</span><span class="params">(constbyte*,constbyte*）</span></span></span><br></pre></td></tr></table></figure>
-
-<p>它就是回调函数的类型，负责用同样的参数形式将参数传递给相应的具体元素比较函数。另外，通过它，两个不同的排序算法，可以调用和具体元素相关的比较函数，实现和元素类型无关的排序：Bubblesort（）和Quicksort（），这两个方法都用同样的参数原型，但实现了不同的排序算法。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DLLDIR__stdcallBubblesort</span><span class="params">(byte* <span class="built_in">array</span>,<span class="keyword">int</span> size,<span class="keyword">int</span> elem_size,CompareFunction cmpFunc)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DLLDIR__stdcallQuicksort</span><span class="params">(byte* <span class="built_in">array</span>,<span class="keyword">int</span> size,<span class="keyword">int</span> elem_size,CompareFunction cmpFunc)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<p>这两个函数接受以下参数：</p>
-<p>·byte * array：指向元素数组的指针（任意类型）。</p>
-<p>·int size：数组中元素的个数。</p>
-<p>·int elem_size：数组中一个元素的大小，以字节为单位。</p>
-<p>·CompareFunction cmpFunc：带有上述原型的指向回调函数的指针。</p>
-<p>这两个函数都会对数组进行某种排序，但每次都需决定两个元素哪个排在前面，而函数中有一个回调函数，其地址是作为一个参数传递进来的。对编写者来说，不必介意函数在何处实现，或它怎样被实现的，所需在意的只是两个用于比较的元素的地址，并返回以下的某个值（库的编写者和使用者都必须遵守这个约定）：</p>
-<p>-1：如果第一个元素较小，那它在已排序好的数组中，应该排在第二个元素前面。</p>
-<p>·0：如果两个元素相等，那么它们的相对位置并不重要，在已排序好的数组中，谁在前面都无所谓。</p>
-<p>·1：如果第一个元素较大，那在已排序好的数组中，它应该排第二个元素后面。</p>
-<p>基于以上约定，函数Bubblesort（）的实现如下，Quicksort（）就稍微复杂一点：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> DLLDIR__stdcall <span class="title">Bubblesort</span><span class="params">(byte*<span class="built_in">array</span>,intsize,intelem_size,cmpFunc)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">for</span>(inti=<span class="number">0</span>;i&lt;size;i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span>(intj=<span class="number">0</span>;j&lt;size-i<span class="number">-1</span>;j++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//回调比较函数</span></span><br><span class="line"><span class="keyword">if</span>(<span class="number">1</span>==(*cmpFunc)(<span class="built_in">array</span>+j*elem_size,<span class="built_in">array</span>+(j+<span class="number">1</span>)*elem_size))</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//两个相比较的元素相交换</span></span><br><span class="line">byte* temp=newbyte[elem_size];</span><br><span class="line"><span class="built_in">memcpy</span>(temp,<span class="built_in">array</span>+j*elem_size,elem_size);</span><br><span class="line"><span class="built_in">memcpy</span>(<span class="built_in">array</span>+j*elem_size,<span class="built_in">array</span>+(j+<span class="number">1</span>)*elem_size,elem_size);</span><br><span class="line"><span class="built_in">memcpy</span>(<span class="built_in">array</span>+(j+<span class="number">1</span>)*elem_size,temp,elem_size);</span><br><span class="line"><span class="keyword">delete</span>[]temp;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>注意：因为实现中使用了memcpy（），所以函数在使用的数据类型方面，会有所局限。</p>
-<p>对使用者来说，必须有一个回调函数，其地址要传递给Bubblesort（）函数。下面有二个简单的示例，一个比较两个整数，而另一个比较两个字符串：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">int__stdcall <span class="title">CompareInts</span><span class="params">(constbyte*velem1,constbyte*velem2)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> elem1=*(<span class="keyword">int</span>*)velem1;</span><br><span class="line"><span class="keyword">int</span> elem2=*(<span class="keyword">int</span>*)velem2;</span><br><span class="line"><span class="keyword">if</span>(elem1&lt;elem2)</span><br><span class="line"><span class="keyword">return</span><span class="number">-1</span>;</span><br><span class="line"><span class="keyword">if</span>(elem1&gt;elem2)</span><br><span class="line">return1;</span><br><span class="line">return0;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> __stdcall <span class="title">CompareStrings</span><span class="params">(constbyte*velem1,constbyte*velem2)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* elem1=(<span class="keyword">char</span>*)velem1;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* elem2=(<span class="keyword">char</span>*)velem2;</span><br><span class="line"><span class="keyword">return</span> <span class="built_in">strcmp</span>(elem1,elem2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>下面另有一个程序，用于测试以上所有的代码，它传递了一个有5个元素的<a href="https://baike.baidu.com/item/%E6%95%B0%E7%BB%84">数组</a>给Bubblesort（）和Quicksort（），同时还传递了一个指向回调函数的指针。（使用byte类型需包含头文件windows.h，或</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> unsignedchar byte;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(intargc,<span class="keyword">char</span>*argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> i;</span><br><span class="line"><span class="keyword">int</span> <span class="built_in">array</span>[]=&#123;<span class="number">5432</span>,<span class="number">4321</span>,<span class="number">3210</span>,<span class="number">2109</span>,<span class="number">1098</span>&#125;;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;Before sorting ints with Bubblesort\n&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="built_in">array</span>[i]&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">Bubblesort((byte*)<span class="built_in">array</span>,<span class="number">5</span>,<span class="keyword">sizeof</span>(<span class="built_in">array</span>[<span class="number">0</span>]),&amp;CompareInts);</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;After the sorting\n&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="built_in">array</span>[i]&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> str[<span class="number">5</span>][<span class="number">10</span>]=&#123;<span class="string">&quot;estella&quot;</span>,<span class="string">&quot;danielle&quot;</span>,<span class="string">&quot;crissy&quot;</span>,<span class="string">&quot;bo&quot;</span>,<span class="string">&quot;angie&quot;</span>&#125;;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;Before sorting strings with Quicksort\n&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;str[i]&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">Quicksort((byte*)str,<span class="number">5</span>,<span class="number">10</span>,&amp;CompareStrings);</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;After the sorting\n&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;str[i]&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">return0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>如果想进行降序排序（大元素在先），就只需修改回调函数的代码，或使用另一个回调函数，这样编程起来灵活性就比较大了。</p>
-<h3 id="调用约定"><a href="#调用约定" class="headerlink" title="调用约定"></a>调用约定</h3><p>上面的代码中，可在函数原型中找到__stdcall，因为它以双下划线打头，所以它是一个特定于编译器的扩展，说到底也就是微软的实现。任何支持开发基于Win32的程序都必须支持这个扩展或其等价物。以__stdcall标识的函数使用了标准调用约定，为什么叫标准约定呢，因为所有的Win32 API（除了个别接受可变参数的除外）都使用它。标准调用约定的函数在它们返回到调用者之前，都会从堆栈中移除掉参数，这也是Pascal的标准约定。但在C/C++中，调用约定是调用者负责清理堆栈，而不是被调用函数；为强制函数使用C/C++调用约定，可使用__cdecl。另外，可变参数函数也使用C/C++调用约定。</p>
-<p>Windows操作系统采用了标准调用约定（Pascal约定），因为其可减小代码的体积。这点对早期的Windows来说非常重要，因为那时它运行在只有640KB内存的电脑上。</p>
-<p>如果你不喜欢__stdcall，还可以使用CALLBACK宏，它定义在windef.h中：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> CALLBACK__stdcallor</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> CALLBACKPASCAL<span class="comment">//而PASCAL在此被#defined成__stdcall</span></span></span><br></pre></td></tr></table></figure>
-
-<p>作为回调函数的C++方法</p>
-<p>因为平时很可能会使用到C++编写代码，也许会想到把回调函数写成类中的一个方法，但先来看看以下的代码：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CCallbackTester</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">CALLBACKCompareInts</span><span class="params">(constbyte*velem1,constbyte*velem2)</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line">Bubblesort((byte*)<span class="built_in">array</span>,<span class="number">5</span>,<span class="keyword">sizeof</span>(<span class="built_in">array</span>[<span class="number">0</span>]),&amp;CCallbackTester::CompareInts);</span><br></pre></td></tr></table></figure>
-
-<p>如果使用微软的编译器，将会得到下面这个编译错误：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">errorC2664:’Bubblesort’:cannotconvertparameter4from’int(__stdcallCCallbackTester::*)(constunsignedchar*,constunsignedchar*）’to’int(__stdcall*)(constunsignedchar*,constunsignedchar*）’There is no context in which this conversion is possible</span><br></pre></td></tr></table></figure>
-
-<p>这是因为非静态成员函数有一个额外的参数：this指针，这将迫使你在成员函数前面加上static。</p>
-]]></content>
-      <categories>
-        <category>C语言</category>
-      </categories>
-      <tags>
-        <tag>函数回调</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>优化程序性能</title>
-    <url>/2021/05/12/%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/</url>
-    <content><![CDATA[<h1 id="优化程序性能"><a href="#优化程序性能" class="headerlink" title="优化程序性能"></a>优化程序性能</h1><h2 id="1-优化编译器的能力和局限性"><a href="#1-优化编译器的能力和局限性" class="headerlink" title="1.优化编译器的能力和局限性"></a>1.优化编译器的能力和局限性</h2><p>内存别名使用<br>函数调用</p>
-<h2 id="2-表示程序性能"><a href="#2-表示程序性能" class="headerlink" title="2.表示程序性能"></a>2.表示程序性能</h2><p>CPE</p>
-<h2 id="3-程序示例"><a href="#3-程序示例" class="headerlink" title="3.程序示例"></a>3.程序示例</h2><h2 id="4-消除循环的低效率"><a href="#4-消除循环的低效率" class="headerlink" title="4.消除循环的低效率"></a>4.消除循环的低效率</h2><h2 id="5-减少过程调用"><a href="#5-减少过程调用" class="headerlink" title="5.减少过程调用"></a>5.减少过程调用</h2><h2 id="6-消除不必要的内存引用"><a href="#6-消除不必要的内存引用" class="headerlink" title="6.消除不必要的内存引用"></a>6.消除不必要的内存引用</h2><h2 id="7-理解现代处理器"><a href="#7-理解现代处理器" class="headerlink" title="7.理解现代处理器"></a>7.理解现代处理器</h2><p>延迟界限<br>吞吐量界限</p>
-<h3 id="整体操作"><a href="#整体操作" class="headerlink" title="整体操作"></a>整体操作</h3><h3 id="功能单元的性能"><a href="#功能单元的性能" class="headerlink" title="功能单元的性能"></a>功能单元的性能</h3><h3 id="处理器操作的抽象模型"><a href="#处理器操作的抽象模型" class="headerlink" title="处理器操作的抽象模型"></a>处理器操作的抽象模型</h3><h2 id="8-循环展开"><a href="#8-循环展开" class="headerlink" title="8.循环展开"></a>8.循环展开</h2><h2 id="9-提高并行性"><a href="#9-提高并行性" class="headerlink" title="9.提高并行性"></a>9.提高并行性</h2><h3 id="多个累积变量"><a href="#多个累积变量" class="headerlink" title="多个累积变量"></a>多个累积变量</h3><h3 id="重新结合变换"><a href="#重新结合变换" class="headerlink" title="重新结合变换"></a>重新结合变换</h3><h2 id="10-优化合并代码的结果小结"><a href="#10-优化合并代码的结果小结" class="headerlink" title="10.优化合并代码的结果小结"></a>10.优化合并代码的结果小结</h2><h2 id="11-一些限制因素"><a href="#11-一些限制因素" class="headerlink" title="11.一些限制因素"></a>11.一些限制因素</h2><h3 id="寄存器溢出"><a href="#寄存器溢出" class="headerlink" title="寄存器溢出"></a>寄存器溢出</h3><h3 id="分支预测和预测错误处罚"><a href="#分支预测和预测错误处罚" class="headerlink" title="分支预测和预测错误处罚"></a>分支预测和预测错误处罚</h3><h2 id="12-理解内存性能"><a href="#12-理解内存性能" class="headerlink" title="12.理解内存性能"></a>12.理解内存性能</h2><h3 id="加载的性能"><a href="#加载的性能" class="headerlink" title="加载的性能"></a>加载的性能</h3><h3 id="存储的性能"><a href="#存储的性能" class="headerlink" title="存储的性能"></a>存储的性能</h3><h2 id="13-应用：性能提高技术"><a href="#13-应用：性能提高技术" class="headerlink" title="13.应用：性能提高技术"></a>13.应用：性能提高技术</h2><h2 id="14-确认和消除性能瓶颈"><a href="#14-确认和消除性能瓶颈" class="headerlink" title="14.确认和消除性能瓶颈"></a>14.确认和消除性能瓶颈</h2><p>代码剖析程序<br>Amdahl定律</p>
-<h3 id="程序剖析"><a href="#程序剖析" class="headerlink" title="程序剖析"></a>程序剖析</h3><p>UNIX的GPROF</p>
-<h3 id="使用剖析程序来指导优化"><a href="#使用剖析程序来指导优化" class="headerlink" title="使用剖析程序来指导优化"></a>使用剖析程序来指导优化</h3><p>有局限性</p>
-<h2 id="15-小结"><a href="#15-小结" class="headerlink" title="15.小结"></a>15.小结</h2>]]></content>
-      <categories>
-        <category>深入理解计算机系统</category>
-      </categories>
-      <tags>
-        <tag>优化程序</tag>
+        <tag>ECF</tag>
       </tags>
   </entry>
 </search>
