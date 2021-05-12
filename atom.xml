@@ -6,7 +6,7 @@
   <link href="https://www.xding39.com/atom.xml" rel="self"/>
   
   <link href="https://www.xding39.com/"/>
-  <updated>2021-04-29T15:38:08.613Z</updated>
+  <updated>2021-05-12T03:56:51.582Z</updated>
   <id>https://www.xding39.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>优化程序性能</title>
+    <link href="https://www.xding39.com/2021/05/12/%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/"/>
+    <id>https://www.xding39.com/2021/05/12/%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD/</id>
+    <published>2021-05-12T03:54:47.000Z</published>
+    <updated>2021-05-12T03:56:51.582Z</updated>
+    
+    
+    <summary type="html">编写高效程序需要做到以下几点:第一，我们必须选择一组适当的算法和数据结构。第二，我们必须编写出编译器能够有效优化以转换成高效可执行代码的源代码。</summary>
+    
+    
+    
+    <category term="深入理解计算机系统" scheme="https://www.xding39.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="优化程序" scheme="https://www.xding39.com/tags/%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>函数回调</title>
